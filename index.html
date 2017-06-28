@@ -1,139 +1,82 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]><html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8"/>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!doctype html>
+<html>
+<head>
+    <title>Kenneth Love</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400i,700" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/kennethlove.css">
+</head>
+<body class="container">
+<h1>Kenneth Love</h1>
+<nav class="nav">
+    <a href="#about">About</a>
+    <a href="#videos">Videos</a>
+    <a href="#praise">Praise</a>
+    <a href="https://twitter.com/kennethlove">Twitter</a>
+    <a href="https://github.com/kennethlove">GitHub</a>
+</nav>
 
-        <title>Gigantuan</title>
+<section id="about">
+    <h1><a href="#about">About</a></h1>
+    <p>Heya! I'm Kenneth. I <a href="https://teamtreehouse.com/kennethlove">teach Python</a>. I'm also <a href="https://github.com/kennethlove">participate in open source</a>. I do a lot of other things, too, but you're probably not here for them.</p>
+    <p>I've been a developer for well over a decade now. I've worked for <a href="https://tindie.com">ecommerce sites</a>, <a href="https://bricksf.com">design firms</a>, and did freelance development for a long time. I have experience setting up servers, using third-party services, build bots for various systems, and more. I also built a pretty popular <a href="https://github.com/brack3t/django-braces">collection of mixins</a> for Django's class-based views. Some of them even got <a href="https://github.com/django/django/commit/e5cb4e14118f3a508e3bc00ee7cd50bb0f18a61d">merged into Django itself</a>.</p>
+    <p>I'm also a frequent conference presenter, currently do weekly programming live streams, and I'm in the midst of writing a book about Django.</p>
+    <p>In the past, I've <a href="https://djangogirls.org/portland/">helped organize workshops</a> and <a href="https://djangocon.us">conferences</a>. Basically, I have a lot of fingers and I like to keep them in pies. That's such a weird phrase.</p>
+</section>
 
-        <link rel="stylesheet" href="assets/css/styles.css">
+<section id="videos">
+    <h1><a href="#videos">Videos</a></h1>
+    <p>Here are some videos of me speaking at conferences if that's something you want to see.</p>
+    <ul>
+        <li><a href="https://youtu.be/XphJRQ3AzMU">Django Admin: Basics and Beyond - PyCon 2017</a></li>
+        <li><a href="https://youtu.be/C0wuTkS93B0">Django 101 - PyCon 2016</a></li>
+        <li><a href="https://youtu.be/5k122tiMpFA">Give a Python a Pony - PyCon 2017</a></li>
+        <li><a href="https://youtu.be/KZHXjGP71kQ">Getting Started With Django, a Crash Course - PyCon 2014</a></li>
+    </ul>
+    <p>Or maybe you'd rather see me programming things live on the Internet with little/no preparation. Here are some of my favorite episodes of that.</p>
+    <ul>
+        <li><a href="https://youtu.be/qL19PoZEMX4">Building a Static Site Generator</a></li>
+        <li><a href="https://youtu.be/AYqg9Mss2k0">Glitch Art Bot with Telegram</a></li>
+        <li><a href="https://youtu.be/j7Na7lBP0UI">API Star (week 1)</a></li>
+        <li><a href="https://youtu.be/VhzQqMSlNKo">API Star (week 2)</a></li>
+    </ul>
+</section>
 
-        <!-- Detect Javascript -->
-        <script>document.documentElement.className = document.documentElement.className.replace("no-js","js");</script>
+<section id="praise">
+    <h1><a href="#praise">Praise</a></h1>
+    <p>People say nice things about me from time to time. Believe me, this section is more awkward for me to create than it is for you to browse through.</p>
+    <blockquote>
+        <p lang="en" dir="ltr">
+            <a href="https://twitter.com/kennethlove">@kennethlove</a> I&#39;m sooo overjoyed with <a href="https://twitter.com/hashtag/PythonBasics?src=hash">#PythonBasics</a> wowza do I feel cool making stuff work (after a lot of mistakes)
+        </p>
+        <cite>Connor (@CBlacksher) <a href="https://twitter.com/CBlacksher/status/877946808244342784">June 22, 2017</a></cite>
+    </blockquote>
 
-        <!--[if lt IE 9]>
-        <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
+    <blockquote class="twitter-tweet" data-lang="en">
+        <p lang="en" dir="ltr">Kenneth is the best!))</p>
+        <cite>Alexey Kislitsin (@alexeyisme) <a href="https://twitter.com/alexeyisme/status/876079224276307968">June 17, 2017</a></cite>
+    </blockquote>
 
-        <script type="text/javascript" src="assets/js/main.js"></script>
-    </head>
-    <body lang="en">
-        <header role="banner" class="header">
-            <h1><a href="#">Gigantuan</a></h1>
-            <div class="non-title">
-                <nav>
-                    <a href="#about"><i><object type="image/svg+xml" data="assets/images/about.svg"><span /></object></i>About</a>
-                    <a href="#desires"><i><object type="image/svg+xml" data="assets/images/desire.svg"><span /></object></i>Desires</a>
-                    <a href="#work"><i><object type="image/svg+xml" data="assets/images/work.svg"><span /></object></i>Work</a>
-                </nav>
-                <div>
-                    <h2>Kenneth Love</h2>
-                    <i class="face"></i>
-                </div>
-            </div>
-        </header>
+    <blockquote class="twitter-tweet" data-lang="en">
+        <p lang="en" dir="ltr"><a href="https://twitter.com/kennethlove">@kennethlove</a> Learning Python is awesome on the Treehouse site!  Late night sessions every night for the past month to change careers! Thanks</p>
+        <cite>Ben (@Fairchildbd) <a href="https://twitter.com/Fairchildbd/status/874491068070461444">June 13, 2017</a></cite>
+    </blockquote>
 
-        <main class="main" role="main">
-            <section id="about" class="about">
-                <div class="pad">
-                    <h1><i><object type="image/svg+xml" data="assets/images/about.svg"><span /></object></i>About</h1>
+    <blockquote class="twitter-tweet" data-lang="en">
+        <p lang="en" dir="ltr">Ty <a href="https://twitter.com/kennethlove">@kennethlove</a> for the deep dive into django admin, you were an awesome teacher!</p>
+        <cite>Paige (@alpacatron3000) <a href="https://twitter.com/alpacatron3000/status/865353310349307905">May 18, 2017</a></cite>
+    </blockquote>
 
-                    <p>Hi. I'm Kenneth Love.</p>
+    <blockquote class="twitter-tweet" data-lang="en">
+        <p lang="en" dir="ltr">.<a href="https://twitter.com/kennethlove">@kennethlove</a> has (unknowingly) positively affected almost every aspect of my life (directly or indirectly).  Thanks :D</p>
+        <cite>Jennifer Nordell (@jcnordell) <a href="https://twitter.com/jcnordell/status/861516695655129088">May 8, 2017</a></cite>
+    </blockquote>
 
-                    <p>I'm a web developer and designer living near Portland, OR with my wife and our two sons.  I've been a freelancer/consultant for years, mostly doing Python &amp; Django development with a smattering of <abbr title="HyperText Markup Language">HTML</abbr>, <abbr title="Cascading StyleSheets">CSS</abbr>, and Javascript work in there, too.</p>
+    <p>There's <b title="wow humblebrag">more on Twitter</b> but I'm too lazy to go find it all.</p>
+</section>
 
-                    <p>I'm also a teacher at heart, helping people out on <abbr title="Internet Relay Chat">IRC</abbr> and through my video series, <a href="http://gettingstartedwithdjango.com">Getting Started With Django</a> and by giving talks &amp; tutorials at DjangoCon &amp; PyCon.</p>
-
-                    <p>When I'm not on a computer, I like to enjoy the <abbr title="Pacific NorthWest">PNW</abbr>'s food and scenery with my family, take photos, and play board games.</p>
-
-                    <p>Getting in touch with me is pretty easy. You can email me at <a href="mailto:kenneth@gigantuan.net">kenneth@gigantuan.net</a> or hit me up <a href="https://twitter.com/kennethlove">on Twitter</a>.</p>
-                </div>
-            </section>
-
-            <section id="desires" class="desires">
-                <div class="pad">
-                    <h1><i><object type="image/svg+xml" data="assets/images/desire.svg"><span /></object></i>Desires</h1>
-
-                    <p>This is a strange section for a consultant/resume site, huh? Well, I figure it's best if I tell you what I'm looking for in addition to what I can do (that's in <a href="#work">the next section</a>, if you need to jump ahead).</p>
-
-                    <p>I've spent years of my life writing code for other people, building CMSes, stores, and other things that make the Internet work. It's good work but it can get a bit tedious and mentally exhausting after awhile.</p>
-
-                    <p>Lately, I've been getting back into web design. I've also been picking up more serious Javascript (Node.js, Backbone, and the like) and I'd love a chance to do this more seriously again. But:</p>
-
-                    <h2>What I really like is teaching</h2>
-
-                    <p>Since teaching is something that I'm rather passionate about, I'd love work in the education sphere. I don't necessarily mean working with schools (although that's great) as I consider corporate training, reference book writing, and lecturing to all be "education" as well.</p>
-
-                    <p>If you're involved in bringing people into the technology industry in any way, <a href="#contact">we should talk</a>.</p>
-                </div>
-            </section>
-
-            <section id="work" class="work">
-                <div class="pad">
-                    <h1><i><object type="image/svg+xml" data="assets/images/work.svg"><span /></object></i>Work</h1>
-
-                    <p>I've been in this game for a long time. Some of the places I've worked with/for over the years:</p>
-
-                    <ul class="joined">
-                        <li><a href="http://lincolnloop.com">Lincoln Loop</a></li>
-                        <li><a href="http://tindie.com">Tindie</a></li>
-                        <li><a href="http://apartments24-7.com">Apartments 24-7</a></li>
-                        <li><a href="http://bricksf.com">Brick</a></li>
-                        <li><a href="http://mercantila.com">Mercantila</a></li>
-                    </ul>
-
-                    <p>I've also released a few somewhat popular Django packages with a good friend of mine:</p>
-
-                    <ul class="joined">
-                        <li><a href="https://github.com/brack3t/django-braces">django-braces</a></li>
-                        <li><a href="https://github.com/brack3t/djrill">djrill</a></li>
-                    </ul>
-
-                    <p>I created and am still working on <a href="http://gettingstartedwithdjango.com">a video series for teaching people Django</a> and I co-hosted a couple of popular podcasts:</p>
-
-                    <ul class="joined">
-                        <li><a href="http://pishposh.tv/forrst-podcast">The Forrst Podcast</a></li>
-                        <li><a href="http://roundup.lincolnloop.com">The Django Round-Up</a></li>
-                    </ul>
-
-                    <p>And, lastly, I should probably list out my skills (in no particular order) so you know if I'm a good fit for your needs or not:</p>
-
-                    <div class="skills">
-                        <ul>
-                            <li>Python</li>
-                            <li>Django</li>
-                            <li>HTML</li>
-                            <li>Javascript</li>
-                            <li>CSS</li>
-                            <li>Sass</li>
-                            <li>LESS</li>
-                            <li>Photoshop</li>
-                            <li>Illustrator</li>
-                        </ul>
-                        <ul>
-                            <li>Nginx</li>
-                            <li>Postgres</li>
-                            <li>Redis</li>
-                            <li>Heroku</li>
-                            <li>DevOps</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <footer class="footer" role="contentinfo">
-            <p>&copy; Kenneth Love; All Rights Reserved</p>
-        </footer>
-        <script src="http://localhost:35729/livereload.js"></script>
-        <script>
-            $(function() {
-                fitText($('.header h1'), 0.52);
-            });
-        </script>
-    </body>
+<footer>
+    <p>&copy; Kenneth Love. If you want to chat, <a href="https://twitter.com/kennethlove">Twitter</a> is your best bet.</p>
+</footer>
+</body>
 </html>
