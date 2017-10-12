@@ -1,0 +1,38 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Kenneth Love"
+theme = "pinkmint"
+
+[permalinks]
+    posts = "/:year/:month/:title/"
+
+[[menu.main]]
+    name = "About"
+    identifier = "about"
+    url = "/#about"
+    weight = 100
+[[menu.main]]
+    name = "Videos"
+    identifier = "videos"
+    url = "/#videos"
+    weight = 110
+[[menu.main]]
+    name = "Praise"
+    identifier = "praise"
+    url = "/#praise"
+    weight = 120
+[[menu.main]]
+    name = "Posts"
+    identifier = "posts"
+    url = "/posts/"
+    weight = 130
+[[menu.main]]
+    name = "Twitter"
+    identifier = "twitter"
+    url = "https://twitter.com/kennethlove"
+    weight = 140
+[[menu.main]]
+    name = "GitHub"
+    identifier = "github"
+    url = "https://github.com/kennethlove"
+    weight = 150

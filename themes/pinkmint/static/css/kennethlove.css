@@ -1,0 +1,80 @@
+/* Coolors Exported Palette - coolors.co/1a535c-4ecdc4-f7fff7-ff6b6b-ffe66d */
+/* RGB */
+* {
+  vertical-align: baseline;
+  font-weight: inherit;
+  font-family: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  border: 0 none;
+  outline: 0;
+  padding: 0;
+  margin: 0; }
+
+body {
+  margin-left: 2rem;
+  padding: 5px; }
+
+h1, h2, h3, h4, h5, h6, p, pre, blockquote, form, ul, ol, dl {
+  margin: 20px 0; }
+
+li, dd, blockquote {
+  margin-left: 40px; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html {
+  background: #f7fff7;
+  color: #2b8998;
+  font-family: 'Roboto Mono', monospace;
+  font-style: italic;
+  font-weight: 400; }
+
+a, a:visited {
+  color: #ff6b6b;
+  font-style: normal;
+  font-weight: 400; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-style: normal;
+  font-weight: 700; }
+
+h1 {
+  font-size: 2rem; }
+  h1 a, h1 a:visited, h1 a:hover, h1 a:active {
+    color: #2b8998; }
+
+h2 {
+  font-size: 1.7rem; }
+
+p {
+  margin-top: 0;
+  width: 50%; }
+
+blockquote {
+  background: #ffe66d;
+  color: #2b8998;
+  margin: 0;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  width: 50%; }
+  blockquote p {
+    width: 100%; }
+  blockquote cite {
+    font-style: normal;
+    font-weight: 700; }
+
+footer {
+  font-style: normal;
+  font-weight: 700; }
+
+@media screen and (max-width: 1024px) {
+  p {
+    width: 95%; }
+
+  blockquote {
+    width: 95%; } }
+
+/*# sourceMappingURL=kennethlove.css.map */

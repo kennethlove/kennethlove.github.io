@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+    <title>{{ block "title" . }}{{ .Site.Title  }}{{ end  }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400i,700" rel="stylesheet">
+    <link rel="stylesheet" href='{{ "css/kennethlove.css" | absURL }}'>
+</head>
+<body class="container">
+<h1>Kenneth Love</h1>
+
+{{ partial "menu.html" . }}
+
+{{ block "main" . }}
+{{ end }}
+
+<footer>
+    <p>&copy; Kenneth Love. If you want to chat, <a href="https://twitter.com/kennethlove">Twitter</a> is your best bet.</p>
+</footer>
+</body>
+</html>
