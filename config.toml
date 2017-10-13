@@ -2,6 +2,12 @@ baseURL = "https://thekennethlove.com/"
 languageCode = "en-us"
 title = "Kenneth Love"
 theme = "pinkmint"
+copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License."
+rssLimit = 10
+enableRobotsTXT = true
+
+[author]
+    name = "Kenneth Love"
 
 [permalinks]
     posts = "/:year/:month/:title/"
@@ -36,3 +42,8 @@ theme = "pinkmint"
     identifier = "github"
     url = "https://github.com/kennethlove"
     weight = 150
+[[menu.main]]
+    name = "YouTube"
+    identifier = "youtube"
+    url = "https://www.youtube.com/channel/UCqQ6TNL6qll8PQxYCMox-YA"
+    weight = 160

@@ -67,8 +67,35 @@ blockquote {
     font-weight: 700; }
 
 footer {
+  border-top: 3px solid #9ee3df;
   font-style: normal;
-  font-weight: 700; }
+  font-weight: 700;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  display: grid;
+  grid-template-columns: 75% 25%; }
+  footer p {
+    line-height: 2rem;
+    width: 100%; }
+  footer ul {
+    margin: 0;
+    padding: 0; }
+    footer ul li {
+      float: left;
+      font-size: 2rem;
+      margin-left: 0;
+      margin-right: 1rem;
+      line-height: 2rem; }
+
+.no-bullets {
+  list-style: none; }
+
+.blog-post {
+  display: grid;
+  grid-template-columns: 75% 24%; }
+
+.post-content p {
+  width: 85%; }
 
 @media screen and (max-width: 1024px) {
   p {
