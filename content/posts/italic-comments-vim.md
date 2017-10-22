@@ -19,7 +19,7 @@ description = "The work I had to do to get italic comments in Vim. This work onl
 +++
 
 I guess it all started with [Operator Mono](https://www.typography.com/blog/introducing-operator). It's absolutely beautiful. If, however, you're like me and 
-simply refuse to send $200 on a font...well, it's out of reach. I'm sure it's available on various torrenting sites but I'd rather find a solution to my 
+simply refuse to spend $200 on a font...well, it's out of reach. I'm sure it's available on various torrenting sites but I'd rather find a solution to my 
 problem that doesn't require me to steal the work of others. And, well, I'm a lover of open source and I spend _hours_ twiddling with my environment set up 
 already; surely I can find a way to do this on my own, right?
 
