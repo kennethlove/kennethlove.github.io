@@ -1,7 +1,7 @@
 +++
 title = "My Quest for Italic Comments in Vim"
 date = 2017-10-22T13:52:43-07:00
-draft = true
+draft = false
 tags = [
     "vim",
     "terminal",
