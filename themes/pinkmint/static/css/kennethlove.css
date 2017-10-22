@@ -97,6 +97,26 @@ footer {
 .post-content p {
   width: 85%; }
 
+.post-content figure img {
+  height: auto;
+  max-width: 90%; }
+
+.post-content code {
+  background: #2b8998;
+  color: #f7fff7;
+  display: inline-block;
+  padding: 0.125rem; }
+
+.post-content pre,
+.post-content .highlight pre {
+  max-width: 90%;
+  padding: 1rem; }
+  .post-content pre code,
+  .post-content .highlight pre code {
+    background: transparent;
+    color: inherit;
+    padding: 0; }
+
 @media screen and (max-width: 1024px) {
   p {
     width: 95%; }

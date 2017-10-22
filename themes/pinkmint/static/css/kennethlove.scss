@@ -132,6 +132,30 @@ footer {
     width: 85%;
 }
 
+.post-content figure img {
+    height: auto;
+    max-width: 90%;
+}
+
+.post-content code {
+    background: $darkteal;
+    color: $offwhite;
+    display: inline-block;
+    padding: 0.125rem;
+}
+
+.post-content pre,
+.post-content .highlight pre {
+    max-width: 90%;
+    padding: 1rem;
+
+    code {
+        background: transparent;
+        color: inherit;
+        padding: 0;
+    }
+}
+
 @media screen and (max-width: 1024px) {
     p { width: 95%; }
     blockquote { width: 95%; }
