@@ -93,7 +93,9 @@ xterm-256color-italic|xterm with 256 colors and italic,
 I stored this file as `~/.config/xterm-256color-italic.terminfo` but the file name doesn't really matter. The first non-comment bit of code, 
 `xterm-256color-italic` defines the profile's name. You can load this new profile by using the `tic` commandline tool.
 
-`$ tic ~/.config/xterm-256color-italic.terminfo`
+```bash
+$ tic ~/.config/xterm-256color-italic.terminfo
+```
 
 Then turn on this profile in iTerm.
 

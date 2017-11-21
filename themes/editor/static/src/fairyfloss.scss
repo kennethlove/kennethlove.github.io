@@ -1,0 +1,630 @@
+@import '_colors';
+
+/* Rules */
+
+.highlight .hll {
+    background-color: $ff_lightyellow
+}
+
+.highlight {
+    background: $ff_purple;
+    color: $ff_white;
+    background-color: $ff_purple
+}
+
+.highlight .c {
+    color: $ff_darkyellow;
+    background-color: $ff_purple
+}
+
+
+/* Comment */
+
+.highlight .err {
+    color: $ff_white;
+    background-color: $ff_purple
+}
+
+
+/* Error */
+
+.highlight .esc {
+    color: $ff_white;
+    background-color: $ff_purple
+}
+
+
+/* Escape */
+
+.highlight .g {
+    color: $ff_white;
+    background-color: $ff_purple
+}
+
+
+/* Generic */
+
+.highlight .k {
+    color: $ff_pink;
+    background-color: $ff_purple
+}
+
+
+/* Keyword */
+
+.highlight .l {
+    color: $ff_white;
+    background-color: $ff_purple
+}
+
+
+/* Literal */
+
+.highlight .n {
+    color: $ff_white;
+    background-color: $ff_purple
+}
+
+
+/* Name */
+
+.highlight .o {
+    color: $ff_white;
+    background-color: $ff_purple
+}
+
+
+/* Operator */
+
+.highlight .x {
+    color: $ff_white;
+    background-color: $ff_purple
+}
+
+
+/* Other */
+
+.highlight .p {
+    color: $ff_white;
+    background-color: $ff_purple
+}
+
+
+/* Punctuation */
+
+.highlight .ch {
+    color: $ff_darkyellow;
+    background-color: $ff_purple
+}
+
+
+/* Comment.Hashbang */
+
+.highlight .cm {
+    color: $ff_darkyellow;
+    background-color: $ff_purple
+}
+
+
+/* Comment.Multiline */
+
+.highlight .cp {
+    color: $ff_pink;
+    background-color: $ff_purple
+}
+
+
+/* Comment.Preproc */
+
+.highlight .cpf {
+    color: $ff_darkyellow;
+    background-color: $ff_purple
+}
+
+
+/* Comment.PreprocFile */
+
+.highlight .c1 {
+    color: $ff_darkyellow;
+    background-color: $ff_purple
+}
+
+
+/* Comment.Single */
+
+.highlight .cs {
+    color: $ff_darkyellow;
+    background-color: $ff_purple
+}
+
+
+/* Comment.Special */
+
+.highlight .gd {
+    color: $ff_red;
+    background-color: $ff_purple
+}
+
+
+/* Generic.Deleted */
+
+.highlight .ge {
+    color: $ff_white;
+    text-decoration: underline;
+    background-color: $ff_purple
+}
+
+
+/* Generic.Emph */
+
+.highlight .gr {
+    color: $ff_white;
+    background-color: $ff_purple
+}
+
+
+/* Generic.Error */
+
+.highlight .gh {
+    color: $ff_white;
+    font-weight: bold;
+    background-color: $ff_purple
+}
+
+
+/* Generic.Heading */
+
+.highlight .gi {
+    color: $ff_white;
+    font-weight: bold;
+    background-color: $ff_green
+}
+
+
+/* Generic.Inserted */
+
+.highlight .go {
+    color: $ff_dustyrose;
+    background-color: $ff_violet
+}
+
+
+/* Generic.Output */
+
+.highlight .gp {
+    color: $ff_white;
+    background-color: $ff_purple
+}
+
+
+/* Generic.Prompt */
+
+.highlight .gs {
+    color: $ff_white;
+    background-color: $ff_purple
+}
+
+
+/* Generic.Strong */
+
+.highlight .gu {
+    color: $ff_white;
+    font-weight: bold;
+    background-color: $ff_purple
+}
+
+
+/* Generic.Subheading */
+
+.highlight .gt {
+    color: $ff_white;
+    background-color: $ff_brightpink
+}
+
+
+/* Generic.Traceback */
+
+.highlight .kc {
+    color: $ff_pink;
+    background-color: $ff_purple
+}
+
+
+/* Keyword.Constant */
+
+.highlight .kd {
+    color: $ff_pink;
+    background-color: $ff_purple
+}
+
+
+/* Keyword.Declaration */
+
+.highlight .kn {
+    color: $ff_pink;
+    background-color: $ff_purple
+}
+
+
+/* Keyword.Namespace */
+
+.highlight .kp {
+    color: $ff_pink;
+    background-color: $ff_purple
+}
+
+
+/* Keyword.Pseudo */
+
+.highlight .kr {
+    color: $ff_pink;
+    background-color: $ff_purple
+}
+
+
+/* Keyword.Reserved */
+
+.highlight .kt {
+    color: $ff_white;
+    background-color: $ff_purple
+}
+
+
+/* Keyword.Type */
+
+.highlight .ld {
+    color: $ff_white;
+    background-color: $ff_purple
+}
+
+
+/* Literal.Date */
+
+.highlight .m {
+    color: $ff_lilac;
+    background-color: $ff_purple
+}
+
+
+/* Literal.Number */
+
+.highlight .s {
+    color: $ff_yellow;
+    background-color: $ff_purple
+}
+
+
+/* Literal.String */
+
+.highlight .na {
+    color: $ff_yellow;
+    background-color: $ff_purple
+}
+
+
+/* Name.Attribute */
+
+.highlight .nb {
+    color: $ff_white;
+    background-color: $ff_purple
+}
+
+
+/* Name.Builtin */
+
+.highlight .nc {
+    color: $ff_white;
+    background-color: $ff_purple
+}
+
+
+/* Name.Class */
+
+.highlight .no {
+    color: $ff_white;
+    background-color: $ff_purple
+}
+
+
+/* Name.Constant */
+
+.highlight .nd {
+    color: $ff_white;
+    background-color: $ff_purple
+}
+
+
+/* Name.Decorator */
+
+.highlight .ni {
+    color: $ff_white;
+    background-color: $ff_purple
+}
+
+
+/* Name.Entity */
+
+.highlight .ne {
+    color: $ff_white;
+    background-color: $ff_purple
+}
+
+
+/* Name.Exception */
+
+.highlight .nf {
+    color: $ff_yellow;
+    background-color: $ff_purple
+}
+
+
+/* Name.Function */
+
+.highlight .nl {
+    color: $ff_yellow;
+    background-color: $ff_purple
+}
+
+
+/* Name.Label */
+
+.highlight .nn {
+    color: $ff_white;
+    background-color: $ff_purple
+}
+
+
+/* Name.Namespace */
+
+.highlight .nx {
+    color: $ff_white;
+    background-color: $ff_purple
+}
+
+
+/* Name.Other */
+
+.highlight .py {
+    color: $ff_white;
+    background-color: $ff_purple
+}
+
+
+/* Name.Property */
+
+.highlight .nt {
+    color: $ff_pink;
+    background-color: $ff_purple
+}
+
+
+/* Name.Tag */
+
+.highlight .nv {
+    color: $ff_mint;
+    font-style: italic;
+    background-color: $ff_purple
+}
+
+
+/* Name.Variable */
+
+.highlight .ow {
+    color: $ff_pink;
+    background-color: $ff_purple
+}
+
+
+/* Operator.Word */
+
+.highlight .w {
+    color: $ff_white;
+    background-color: $ff_purple
+}
+
+
+/* Text.Whitespace */
+
+.highlight .mb {
+    color: $ff_lilac;
+    background-color: $ff_purple
+}
+
+
+/* Literal.Number.Bin */
+
+.highlight .mf {
+    color: $ff_lilac;
+    background-color: $ff_purple
+}
+
+
+/* Literal.Number.Float */
+
+.highlight .mh {
+    color: $ff_lilac;
+    background-color: $ff_purple
+}
+
+
+/* Literal.Number.Hex */
+
+.highlight .mi {
+    color: $ff_lilac;
+    background-color: $ff_purple
+}
+
+
+/* Literal.Number.Integer */
+
+.highlight .mo {
+    color: $ff_lilac;
+    background-color: $ff_purple
+}
+
+
+/* Literal.Number.Oct */
+
+.highlight .sa {
+    color: $ff_yellow;
+    background-color: $ff_purple
+}
+
+
+/* Literal.String.Affix */
+
+.highlight .sb {
+    color: $ff_yellow;
+    background-color: $ff_purple
+}
+
+
+/* Literal.String.Backtick */
+
+.highlight .sc {
+    color: $ff_yellow;
+    background-color: $ff_purple
+}
+
+
+/* Literal.String.Char */
+
+.highlight .dl {
+    color: $ff_yellow;
+    background-color: $ff_purple
+}
+
+
+/* Literal.String.Delimiter */
+
+.highlight .sd {
+    color: $ff_yellow;
+    background-color: $ff_purple
+}
+
+
+/* Literal.String.Doc */
+
+.highlight .s2 {
+    color: $ff_yellow;
+    background-color: $ff_purple
+}
+
+
+/* Literal.String.Double */
+
+.highlight .se {
+    color: $ff_yellow;
+    background-color: $ff_purple
+}
+
+
+/* Literal.String.Escape */
+
+.highlight .sh {
+    color: $ff_yellow;
+    background-color: $ff_purple
+}
+
+
+/* Literal.String.Heredoc */
+
+.highlight .si {
+    color: $ff_yellow;
+    background-color: $ff_purple
+}
+
+
+/* Literal.String.Interpol */
+
+.highlight .sx {
+    color: $ff_yellow;
+    background-color: $ff_purple
+}
+
+
+/* Literal.String.Other */
+
+.highlight .sr {
+    color: $ff_yellow;
+    background-color: $ff_purple
+}
+
+
+/* Literal.String.Regex */
+
+.highlight .s1 {
+    color: $ff_yellow;
+    background-color: $ff_purple
+}
+
+
+/* Literal.String.Single */
+
+.highlight .ss {
+    color: $ff_yellow;
+    background-color: $ff_purple
+}
+
+
+/* Literal.String.Symbol */
+
+.highlight .bp {
+    color: $ff_white;
+    background-color: $ff_purple
+}
+
+
+/* Name.Builtin.Pseudo */
+
+.highlight .fm {
+    color: $ff_yellow;
+    background-color: $ff_purple
+}
+
+
+/* Name.Function.Magic */
+
+.highlight .vc {
+    color: $ff_mint;
+    font-style: italic;
+    background-color: $ff_purple
+}
+
+
+/* Name.Variable.Class */
+
+.highlight .vg {
+    color: $ff_mint;
+    font-style: italic;
+    background-color: $ff_purple
+}
+
+
+/* Name.Variable.Global */
+
+.highlight .vi {
+    color: $ff_mint;
+    font-style: italic;
+    background-color: $ff_purple
+}
+
+
+/* Name.Variable.Instance */
+
+.highlight .vm {
+    color: $ff_mint;
+    font-style: italic;
+    background-color: $ff_purple
+}
+
+
+/* Name.Variable.Magic */
+
+.highlight .il {
+    color: $ff_lilac;
+    background-color: $ff_purple
+}
+
+
+/* Literal.Number.Integer.Long */

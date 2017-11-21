@@ -1,0 +1,16 @@
+<nav class="nav">
+    <ul>
+        {{ $currentPage := . }}
+        {{ range .Site.Menus.main }}
+        <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+        {{ end }}
+    </ul>
+    
+    <nav class="nav post-nav">
+        <ul>
+            {{ range where .Site.Taxonomies.categories.blog.Pages.ByDate.Reverse "Section" "posts" }}
+            <li><a href="{{ .Permalink }}" class="post-nav-item" title="{{ .Description }}">{{ .File.LogicalName }}</a></li>
+            {{ end }}
+        </ul>
+    </nav>
+</nav>

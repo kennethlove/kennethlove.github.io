@@ -1,10 +1,13 @@
 baseURL = "https://thekennethlove.com/"
 languageCode = "en-us"
 title = "Kenneth Love"
-theme = "pinkmint"
+theme = "editor"
 copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License."
 rssLimit = 10
 enableRobotsTXT = true
+pygmentsCodefences = true
+pygmentsUseClasses = true
+sectionPagesMenu = "pagesMenu"
 
 [author]
     name = "Kenneth Love"
@@ -12,38 +15,28 @@ enableRobotsTXT = true
 [permalinks]
     posts = "/:year/:month/:title/"
 
+[taxonomies]
+    tag = "tags"
+    category = "categories"
+    series = "series"
+
 [[menu.main]]
-    name = "About"
-    identifier = "about"
-    url = "/#about"
+    name = "README.md"
+    identifier = "readme"
+    url = "/"
     weight = 100
 [[menu.main]]
-    name = "Videos"
-    identifier = "videos"
-    url = "/#videos"
+    name = "social.md"
+    identifier = "social"
+    url = "/social/"
     weight = 110
 [[menu.main]]
-    name = "Praise"
-    identifier = "praise"
-    url = "/#praise"
+    name = "videos.md"
+    identifier = "videos"
+    url = "/videos/"
     weight = 120
 [[menu.main]]
-    name = "Posts"
+    name = "posts/"
     identifier = "posts"
     url = "/posts/"
     weight = 130
-[[menu.main]]
-    name = "Twitter"
-    identifier = "twitter"
-    url = "https://twitter.com/kennethlove"
-    weight = 140
-[[menu.main]]
-    name = "GitHub"
-    identifier = "github"
-    url = "https://github.com/kennethlove"
-    weight = 150
-[[menu.main]]
-    name = "YouTube"
-    identifier = "youtube"
-    url = "https://www.youtube.com/channel/UCqQ6TNL6qll8PQxYCMox-YA"
-    weight = 160
