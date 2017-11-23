@@ -3,44 +3,19 @@
     <article class="post-content">
         <header>
             <h1 id="title">{{ .Title }}</h1>
-            <time timestamp="{{ .Date }}">{{ .Date.Format "Mon Jan 2, 2006" }}</time>
-            <ul class="no-bullets inline-list">
-                {{ with .Params.tags }}
-                {{ range . }}
-                <li><a href="{{ "tags" | absURL }}/{{ . | urlize }}">{{ . }}</a></li>
-                {{ end}}
-                {{ end }}
-            </ul>
+
+            <div class="post-details">
+                <time timestamp="{{ .Date }}">Posted on {{ .Date.Format "Mon Jan 2, 2006" }}</time>
+                <ul class="no-bullets inline-list">
+                    {{ with .Params.tags }}
+                    {{ range . }}
+                    <li><a href="{{ "tags" | absURL }}/{{ . | urlize }}">{{ . }}</a></li>
+                    {{ end}}
+                    {{ end }}
+                </ul>
+            </div>
         </header>
         {{ .Content }}
     </article>
-    <aside class="post-meta">
-        <div>
-            {{ with .Params.categories }}
-            <h4>Topics</h4>
-            <ul id="topics">
-                {{ range . }}
-                <li><a href="{{ "categories" | absURL }}/{{ . | urlize }}">{{ . }}</a></li>
-                {{ end }}
-            </ul>
-            {{ end }}
-            {{ with .Params.tags }}
-            <h4>Tags</h4>
-            <ul id="tags">
-                {{ range . }}
-                <li><a href="{{ "tags" | absURL }}/{{ . | urlize }}">{{ . }}</a></li>
-                {{ end }}
-            </ul>
-            {{ end }}
-        </div>
-        <div>
-            {{ with .PrevInSection }}
-            <a class="previous" href="{{ .Permalink }}">{{ .Title }}</a>
-            {{ end }}
-            {{ with .NextInSection }}
-            <a class="next" href="{{ .Permalink }}">{{ .Title }}</a>
-            {{ end }}
-        </div>
-    </aside>
 </section>
 {{ end }}

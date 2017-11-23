@@ -4,137 +4,46 @@
 
 .chroma {
     color: $ff_white;
-    background-color: $ff_purple
+    background-color: $ff_purple;
 }
 
-
-/* Error */
-
-.chroma .ss4 {
-    color: $ff_red
-}
-
+.highlight .chroma pre { padding: 0; }
 
 /* LineHighlight */
 
 .chroma .hl {
-    background-color: $ff_lightyellow;
-    color: $ff_purple;
+    background-color: $ff_purple;
     display: block;
-    width: 100%
 }
 
-
 /* LineNumbers */
-
-.chroma .ln {
+.chroma .lnt {
     color: $ff_lilac;
     margin-right: 0.4em;
     padding: 0 0.4em 0 0.4em;
 }
 
+.chroma {
+    /* Keyword */
+    .k, .kc, .kd, .kn, .kp, .kr, .kt, .o { color: $ff_pink; }
 
-/* Keyword */
+    /* Function name */
+    .nf, .nc {
+        color: $ff_yellow;
+        text-decoration: underline;
+    }
 
-.chroma .s3e8 {
-    color: $ff_pink;
-    font-weight: bold
-}
+    /* Superclasses */
+    .nc + .p + .n {
+        color: $ff_yellow;
+        font-style: italic;
+        text-decoration: underline;
+    }
 
+    /* Comment */
+    .c, .cm, .cp, .c1, .cs, .ch { color: $ff_darkyellow; }
 
-/* NameAttribute */
+    .s1 { color: $ff_darkyellow; }
 
-.chroma .s7d1 {
-    color: $ff_white;
-}
-
-
-/* NameTag */
-
-.chroma .s7e2 {
-    color: $ff_pink;
-    font-weight: bold;
-}
-
-
-/* NameVariable */
-
-.chroma .s7e3 {
-    color: $ff_mint;
-    font-style: italic;
-}
-
-
-/* LiteralDate */
-
-.chroma .sbb9 {
-    color: $ff_white;
-    font-weight: bold
-}
-
-
-/* LiteralString */
-
-.chroma .sc1c {
-    color: $ff_yellow;
-    font-weight: bold
-}
-
-
-/* LiteralNumber */
-
-.chroma .sc80 {
-    color: $ff_lilac;
-    font-weight: bold
-}
-
-
-/* Comment */
-
-.chroma .s1770 {
-    color: $ff_darkyellow
-}
-
-
-/* CommentPreproc */
-
-.chroma .s17d4 {
-    color: $ff_darkyellow;
-    font-weight: bold
-}
-
-
-/* GenericHeading */
-
-.chroma .s1b5c {
-    color: $ff_white;
-    font-weight: bold
-}
-
-
-/* GenericStrong */
-
-.chroma .s1b60 {
-    color: #ff_white;
-    font-weight: bold
-}
-
-
-/* GenericSubheading */
-
-.chroma .s1b61 {
-    color: $ff_white;
-    font-weight: bold
-}
-
-
-/* GenericUnderline */
-
-.chroma .s1b63 {}
-
-
-/* Function */
-
-.chroma .s7d9 {
-    color: $ff_yellow;
+    .mi, .se { color: $ff_lilac; }
 }

@@ -1,6 +1,5 @@
 @import '_colors';
-// Fairyfloss import
-@import 'syntax';
+
 * {
     vertical-align: baseline;
     font-weight: inherit;
@@ -14,11 +13,11 @@
 }
 
 html {
-    background-color: $ff_white;
+    background-color: $ff_purple;
+    color: $ff_white;
     font-family: 'Hack', 'Fantasque Sans Mono', monospace;
     font-style: normal;
     font-weight: normal;
-    text-decoration: none;
 }
 
 html,
@@ -29,12 +28,26 @@ body {
 
 .container {
     display: flex;
+    flex-flow: row wrap;
     flex-wrap: wrap-reverse;
+    justify-content: space-evenly;
+}
+
+.container > * {
+    flex: 1 100%;
+}
+
+@media all and (min-width: 600px) {
+    .side { flex: 1 auto; }
+}
+
+@media all and (min-width: 800px) {
+    .main { flex: 3 0px; }
+    .side { order: 1; }
+    .main { order: 2; }
 }
 
 .side {
-    flex-basis: 18em;
-    flex-shrink: 0;
     padding: 1rem;
 
     h1 {
@@ -57,7 +70,7 @@ body {
             margin-top: -0.8em;
 
             li {
-                color: $ff_red;
+                color: $ff_mint;
                 margin-bottom: 0.1em;
 
                 &::before {
@@ -73,9 +86,7 @@ body {
 }
 
 .main {
-    // flex-basis: 60em;
-    // flex-grow: 1;
-    // flex-shrink: 1;
+    flex-basis: 75%;
     padding: 1rem;
 }
 
@@ -109,7 +120,7 @@ table {
 a,
 a:visited {
     border-bottom: 1px dashed;
-    color: $ff_violet;
+    color: $ff_mint;
     font-style: normal;
     font-weight: 400;
     text-decoration: none;
@@ -117,7 +128,7 @@ a:visited {
 a:hover,
 a:focus {
     border-bottom-style: solid;
-    color: $ff_violet;
+    color: $ff_yellow;
     outline: 1px solid;
     outline-offset: .25em;
 }
@@ -130,7 +141,8 @@ h5,
 h6 {
     font-size: 1rem;
     font-style: normal;
-    font-weight: 100;
+    font-weight: bold;
+    margin-top: 2em;
     text-decoration: underline;
 }
 
@@ -141,7 +153,7 @@ h4::before { content: "#### "; }
 h5::before { content: "##### "; }
 h6::before { content: "###### "; }
 
-p {
+p, table {
     margin-top: 0;
     max-width: 58em;
 }
@@ -152,6 +164,7 @@ p {
 
 .inline-list {
     display: flex;
+    flex-flow: row wrap;
     align-content: center;
     justify-content: space-between;
 
@@ -160,38 +173,56 @@ p {
     }
 }
 
+.post-details {
+    margin-bottom: 1em;
+    max-width: 58em;
+
+    time {
+        display: block;
+        padding-top: 1em;
+    }
+}
+
 .post-content figure img {
     height: auto;
     max-width: 58em;
 }
 
-.post-content code {
-    background: $ff_purple;
-    color: $ff_white;
-    display: inline-block;
-    padding: 0.125rem 0.3rem;
-}
-
-.post-content pre,
-.post-content .highlight pre {
-    max-width: 90%;
-    padding: 1.2rem;
-    code {
-        background: transparent;
-        color: inherit;
-        padding: 0;
+.post-content {
+    .highlight {
+        border: 1px solid $ff_lilac;
+        margin-bottom: 1em;
+    }
+    p code {
+        background: $ff_lilac;
+        color: $ff_purple;
+        display: inline-block;
+        padding: 0.125rem 0.3rem;
+    }
+    pre,
+    .highlight pre {
+        max-width: 58em;
+        overflow-x: auto;
+        padding: 1rem;
+        code {
+            background: transparent;
+            padding: 0;
+        }
     }
 }
 
+.lnt {
+    display: block;
+}
+
 .tlite {
-  background: $ff_purple;
-  color: $ff_white;
-  font-family: sans-serif;
-  font-size: 0.8rem;
+  background: $ff_lightyellow;
+  color: $ff_purple;
+  font-size: 1rem;
   font-weight: normal;
   text-decoration: none;
   text-align: left;
-  padding: 0.6em 0.75rem;
+  padding: 0.35em;
   position: absolute;
   opacity: 0;
   visibility: hidden;
@@ -208,5 +239,5 @@ p {
 
 .tlite-visible {
   visibility: visible;
-  opacity: 0.9;
+  opacity: 1;
 }
