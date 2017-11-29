@@ -88,6 +88,7 @@ body {
 .main {
     flex-basis: 75%;
     padding: 1rem;
+    max-width: 90%;
 }
 
 h1,
@@ -186,6 +187,7 @@ p, table {
 .post-content figure img {
     height: auto;
     max-width: 58em;
+    width: 100%;
 }
 
 .post-content {
