@@ -298,6 +298,30 @@ p, table {
   visibility: visible;
   opacity: 1;
 }
+
+.spoiler {
+  background: #ffffcc;
+  color: #5a5475;
+  margin-bottom: 1em;
+  max-width: 58em;
+}
+
+.spoiler header {
+  background: repeating-linear-gradient(45deg, #e6c000, #e6c000 30px, #ffea00 30px, #ffea00 60px);
+  color: #5a5475;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 0.5rem 0;
+  text-align: center;
+}
+
+.spoiler main {
+  padding: 1rem;
+}
+
+.spoiler main.hidden {
+  display: none;
+}
  
 
  /*# sourceMappingURL= kennethlove.css.map */

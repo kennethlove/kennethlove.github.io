@@ -243,3 +243,31 @@ p, table {
   visibility: visible;
   opacity: 1;
 }
+
+.spoiler {
+    background: $ff_lightyellow;
+    color: $ff_purple;
+    margin-bottom: 1em;
+    max-width: 58em;
+
+    header {
+        background: repeating-linear-gradient(
+            45deg,
+            $ff_darkyellow,
+            $ff_darkyellow 30px,
+            $ff_yellow 30px,
+            $ff_yellow 60px
+        );
+        color: $ff_purple;
+        cursor: pointer;
+        font-weight: bold;
+        padding: 0.5rem 0;
+        text-align: center;
+    }
+
+    main {
+        padding: 1rem;
+
+        &.hidden { display: none; }
+    }
+}

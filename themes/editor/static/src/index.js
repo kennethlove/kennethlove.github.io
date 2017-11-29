@@ -24,3 +24,11 @@ tlite((el) => {
     return when('post-nav-item', {grav: 'e'})
 });
 focusTooltips();
+
+const spoilerHeaders = document.querySelectorAll('.spoiler header');
+for (const sh of spoilerHeaders) {
+    sh.addEventListener('click', (e) => {
+        window.spoiler = e.target;
+        e.target.nextElementSibling.classList.toggle('hidden');
+    });
+}
