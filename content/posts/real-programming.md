@@ -1,6 +1,6 @@
 +++
 title = "Real World Programming or The Whole Damn Point is to Solve Problems"
-date = 2018-2-19T13:52:43-07:00
+date = 2018-02-19T13:52:43-07:00
 draft = false
 tags = [
     "programming",
