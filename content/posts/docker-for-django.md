@@ -250,7 +250,7 @@ server {
 
 If you're comfortable with `nginx` configuration, you probably understand this
 file, but I'll go over it for those of you, like me, who need an introduction
-or refresher from time-to-time.
+or refresher from time to time.
 
 First, we define an upstream server named `app`. This server lives at the
 network location of `app` and uses port 8000. Our Django service will be named
