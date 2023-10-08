@@ -1,42 +1,47 @@
 baseURL = "https://thekennethlove.com/"
-languageCode = "en-us"
-title = "Kenneth Love"
-theme = "editor"
 copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License."
-rssLimit = 10
 enableRobotsTXT = true
+languageCode = "en-us"
 pygmentsCodefences = true
 pygmentsUseClasses = true
+rssLimit = 10
 sectionPagesMenu = "pagesMenu"
+theme = "editor"
+title = "Kenneth Love"
 
 [author]
-    name = "Kenneth Love"
+name = "Kenneth Love"
 
 [permalinks]
-    posts = "/:year/:month/:title/"
+posts = "/:year/:month/:title/"
 
 [taxonomies]
-    tag = "tags"
-    category = "categories"
-    series = "series"
+category = "categories"
+series = "series"
+tag = "tags"
 
 [[menu.main]]
-    name = "README.md"
-    identifier = "readme"
-    url = "/"
-    weight = 100
+identifier = "readme"
+name = "README.md"
+url = "/"
+weight = 100
 [[menu.main]]
-    name = "social.md"
-    identifier = "social"
-    url = "/social/"
-    weight = 110
+identifier = "mentoring"
+name = "mentoring.md"
+url = "/mentoring/"
+weight = 110
 [[menu.main]]
-    name = "videos.md"
-    identifier = "videos"
-    url = "/videos/"
-    weight = 120
+identifier = "social"
+name = "social.md"
+url = "/social/"
+weight = 120
 [[menu.main]]
-    name = "posts/"
-    identifier = "posts"
-    url = "/posts/"
-    weight = 130
+identifier = "videos"
+name = "videos.md"
+url = "/videos/"
+weight = 130
+[[menu.main]]
+identifier = "posts"
+name = "posts/"
+url = "/posts/"
+weight = 140

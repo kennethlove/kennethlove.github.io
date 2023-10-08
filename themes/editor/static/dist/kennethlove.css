@@ -170,9 +170,45 @@ h6::before {
   content: "###### ";
 }
 
-p, table {
+blockquote,
+p,
+table {
   margin-top: 0;
   max-width: 58em;
+}
+
+blockquote {
+  background-color: #625c7b;
+  margin-left: 0;
+  padding: 1rem;
+  padding-left: 3rem;
+  max-width: 55rem;
+}
+blockquote cite {
+  display: block;
+}
+
+table {
+  border-collapse: separate;
+}
+table th {
+  border-bottom: 1px solid yellow;
+  padding-bottom: 0.5rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+}
+table td {
+  background-color: #625c7b;
+  padding: 0.5rem;
+}
+table td em {
+  color: #ffb8d1;
+  font-style: italic;
+  font-weight: normal;
+}
+table tbody tr:first-child td {
+  font-weight: bold;
+  text-align: center;
 }
 
 .no-bullets {
