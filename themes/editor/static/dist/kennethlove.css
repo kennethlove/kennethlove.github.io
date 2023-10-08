@@ -15,7 +15,7 @@
 html {
   background-color: #5a5475;
   color: #f8f8f2;
-  font-family: 'Hack', 'Fantasque Sans Mono', monospace;
+  font-family: "Hack", "Fantasque Sans Mono", monospace;
   font-style: normal;
   font-weight: normal;
 }
@@ -27,92 +27,64 @@ body {
 }
 
 .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -ms-flex-wrap: wrap-reverse;
-      flex-wrap: wrap-reverse;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  flex-flow: row wrap;
+  flex-wrap: wrap-reverse;
+  justify-content: space-evenly;
 }
 
 .container > * {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 100%;
-          flex: 1 100%;
+  flex: 1 100%;
 }
 
 @media all and (min-width: 600px) {
   .side {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 auto;
-            flex: 1 auto;
+    flex: 1 auto;
   }
 }
-
 @media all and (min-width: 800px) {
   .main {
-    -webkit-box-flex: 3;
-        -ms-flex: 3 0px;
-            flex: 3 0px;
+    flex: 3 0px;
   }
   .side {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+    order: 1;
   }
   .main {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
+    order: 2;
   }
 }
-
 .side {
   padding: 1rem;
 }
-
 .side h1 {
   font-size: inherit;
 }
-
 .side .nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-
 .side .nav ul li {
   line-height: 1.2;
   margin: 0 0 1em;
 }
-
 .side .post-nav ul {
   margin-top: -0.8em;
 }
-
 .side .post-nav ul li {
   color: #c2ffdf;
   margin-bottom: 0.1em;
 }
-
 .side .post-nav ul li::before {
   content: "├─";
 }
-
 .side .post-nav a {
   margin-left: 0.5em;
   text-decoration: none;
 }
 
 .main {
-  -ms-flex-preferred-size: 75%;
-      flex-basis: 75%;
+  flex-basis: 75%;
   padding: 1rem;
   max-width: 90%;
 }
@@ -158,7 +130,7 @@ a:focus {
   border-bottom-style: solid;
   color: #ffea00;
   outline: 1px solid;
-  outline-offset: .25em;
+  outline-offset: 0.25em;
 }
 
 h1,
@@ -208,20 +180,11 @@ p, table {
 }
 
 .inline-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-flow: row wrap;
+  align-content: center;
+  justify-content: space-between;
 }
-
 .inline-list li {
   margin: 0;
 }
@@ -230,7 +193,6 @@ p, table {
   margin-bottom: 1em;
   max-width: 58em;
 }
-
 .post-details time {
   display: block;
   padding-top: 1em;
@@ -246,21 +208,18 @@ p, table {
   border: 1px solid #c5a3ff;
   margin-bottom: 1em;
 }
-
 .post-content p code {
   background: #c5a3ff;
   color: #5a5475;
   display: inline-block;
   padding: 0.125rem 0.3rem;
 }
-
 .post-content pre,
 .post-content .highlight pre {
   max-width: 58em;
   overflow-x: auto;
   padding: 1rem;
 }
-
 .post-content pre code,
 .post-content .highlight pre code {
   background: transparent;
@@ -282,7 +241,6 @@ p, table {
   position: absolute;
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: opacity 0.4s;
   transition: opacity 0.4s;
   white-space: nowrap;
   z-index: 1000;
@@ -305,7 +263,6 @@ p, table {
   margin-bottom: 1em;
   max-width: 58em;
 }
-
 .spoiler header {
   background: repeating-linear-gradient(45deg, #e6c000, #e6c000 30px, #ffea00 30px, #ffea00 60px);
   color: #5a5475;
@@ -314,14 +271,11 @@ p, table {
   padding: 0.5rem 0;
   text-align: center;
 }
-
 .spoiler main {
   padding: 1rem;
 }
-
 .spoiler main.hidden {
   display: none;
 }
- 
 
- /*# sourceMappingURL= kennethlove.css.map */
+/*# sourceMappingURL=kennethlove.css.map */

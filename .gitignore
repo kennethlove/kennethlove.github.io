@@ -4,3 +4,4 @@
 .hg/
 npm-debug.log
 node_modules/
+.hugo_build.lock
