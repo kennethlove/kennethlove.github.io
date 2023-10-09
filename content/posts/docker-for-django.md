@@ -1,7 +1,8 @@
 +++
 title = "My Favorite Docker Setup for Django Development"
 date = 2019-06-14T15:47:01-07:00
-draft = true
+draft = false
+publishdate = 2023-10-09
 tags = [
     "programming",
     "docker",
@@ -54,7 +55,7 @@ Docker expert, so buyer beware!
 _file: `Dockerfile`_
 
 ```dockerfile
-FROM python:3.7
+FROM python:<USE WHAT'S CURRENT>
 
 RUN apt-get update && \
   apt-get install -y && \
@@ -75,7 +76,7 @@ CMD ["uwsgi", "--ini", "/opt/app/uwsgi.ini"]
 ```
 
 Starting from the top, this `Dockerfile` starts by using the `python:3.7` image,
-which gives you a recent Debian version with Python 3.7 installed. Next, it
+which gives you a recent Debian version with Python installed. Next, it
 automatically updates the package list and installs any necessary updates. Then
 it installs [`uwsgi`] which is how we'll run our Django project.
 
@@ -195,7 +196,7 @@ _file: `docker-compose.yml`_
 
 ```yaml
 nginx:
-  image: nginx:1.15-alpine
+  image: nginx:<USE WHAT'S CURRENT>
   ports:
     - "80:80"
     - "443:443"
@@ -209,11 +210,12 @@ nginx:
 ```
 
 First is our `nginx` section, which will give us the excellent [`nginx` server].
-We tell Docker to use the `nginx` image, version `1.15-alpine`. This will give
-us a small Linux distribution with `nginx` already installed. Next we expose
-two ports, 80 and 443, so we can reach `nginx` from our web browser. The 443
-port is a bit of forward-thinking for HTTPS connections. I'll leave the HTTPS
-certificate and configuration to you, though.
+We tell Docker to use the `nginx` image, version TBD, you'll need to find a
+recent release. This will give us a small Linux distribution with `nginx`
+already installed. Next we expose two ports, 80 and 443, so we can reach
+`nginx` from our web browser. The 443 port is a bit of forward-thinking
+for HTTPS connections. I'll leave the HTTPS certificate and configuration
+to you, though.
 
 Next, we mount a local directory, `./data/nginx`, into the configuration
 directory for `nginx`. This lets us easily override configuration files.
@@ -271,7 +273,7 @@ _file: `docker-compose.yml`_
 
 ```yaml
 database:
-  image: postgres:10
+  image: postgres:<USE WHAT'S CURRENT>
   ports:
     - "5432:5432"
   volumes:
@@ -285,7 +287,7 @@ database:
 
 This should look quite a bit like the `nginx` section from above. Again, we're
 using an image so we don't have to build all of this ourselves. In this case,
-it's `postgres:10` which will give us an install of Postgres 10. Next, we
+it's `postgres:<CURRENT VERSION>` which will give us an install of Postgres. Next, we
 expose port 5432. If you don't want to use a local database GUI, you can leave
 this out (but I think you need to add `expose: 5432` so other services can
 see your database).
