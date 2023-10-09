@@ -16,6 +16,11 @@ categories = [
 description = "This is my current Docker set up for Django development. I think it works really well, so I wanted to share."
 +++
 
+**Note:** This article was written in 2019. I've updated what I can see as being
+outdated or outdate-able, so it _should_ be pretty reliable, but I make no
+promises. If you find something that's wrong, please [let me know](/social/).
+
+
 At [my company](https://oreilly.com), we've been developing a common Docker
 workflow for all of our microservices to use. I _really_ want us to get it
 to a state where we can open source it but that seems to be a long way off.
