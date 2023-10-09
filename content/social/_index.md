@@ -7,8 +7,11 @@ markup: mmark
 
 You can find me online at various places:
 
+* [Mastodon](https://tech.lgbt/@klove)
 * [Twitter](https://twitter.com/kennethlove)
 * [GitHub](https://github.com/kennethlove)
 * [YouTube](https://youtube.com/kennethlove)
 
-I'm also a fan of Mastodon but I don't use it nearly as much as I use Twitter. If you're the professional-type, I'm also on [LinkedIn](https://linkedin.com/in/kennethhate) but don't take it very seriously.
+If you're the professional-type, I'm also on [LinkedIn](https://linkedin.com/in/kennethhate) but I don't take it very seriously.
+
+You can email me by combining **my name** and **this domain name**.

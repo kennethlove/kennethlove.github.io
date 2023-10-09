@@ -116,23 +116,6 @@ table {
   border-spacing: 0;
 }
 
-a,
-a:visited {
-  border-bottom: 1px dashed;
-  color: #c2ffdf;
-  font-style: normal;
-  font-weight: 400;
-  text-decoration: none;
-}
-
-a:hover,
-a:focus {
-  border-bottom-style: solid;
-  color: #ffea00;
-  outline: 1px solid;
-  outline-offset: 0.25em;
-}
-
 h1,
 h2,
 h3,
@@ -174,7 +157,7 @@ blockquote,
 p,
 table {
   margin-top: 0;
-  max-width: 58em;
+  max-width: 80vw;
 }
 
 blockquote {
@@ -209,6 +192,33 @@ table td em {
 table tbody tr:first-child td {
   font-weight: bold;
   text-align: center;
+}
+
+a,
+a:visited {
+  border-bottom: 1px dashed;
+  color: #c2ffdf;
+  font-style: normal;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  border-bottom-style: solid;
+  color: #ffea00;
+  outline: 1px solid;
+  outline-offset: 0.25em;
+}
+
+em {
+  color: #ffea00;
+  font-style: italic;
+}
+
+strong {
+  color: #c2ffdf;
+  font-weight: bold;
 }
 
 .no-bullets {

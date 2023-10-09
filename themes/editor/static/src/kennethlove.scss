@@ -131,23 +131,6 @@ table {
     border-spacing: 0;
 }
 
-a,
-a:visited {
-    border-bottom: 1px dashed;
-    color: $ff_mint;
-    font-style: normal;
-    font-weight: 400;
-    text-decoration: none;
-}
-
-a:hover,
-a:focus {
-    border-bottom-style: solid;
-    color: $ff_yellow;
-    outline: 1px solid;
-    outline-offset: .25em;
-}
-
 h1,
 h2,
 h3,
@@ -189,7 +172,7 @@ blockquote,
 p,
 table {
     margin-top: 0;
-    max-width: 58em;
+    max-width: 80vw;
 }
 
 blockquote {
@@ -229,6 +212,33 @@ table {
         font-weight: bold;
         text-align: center;
     }
+}
+
+a,
+a:visited {
+    border-bottom: 1px dashed;
+    color: $ff_mint;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    border-bottom-style: solid;
+    color: $ff_yellow;
+    outline: 1px solid;
+    outline-offset: .25em;
+}
+
+em {
+    color: $ff_yellow;
+    font-style: italic;
+}
+
+strong {
+    color: $ff_mint;
+    font-weight: bold;
 }
 
 .no-bullets {
