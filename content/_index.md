@@ -7,10 +7,11 @@ markup: mmark
 
 # Overview
 
-Heya! I'm Kenneth. I write [code for a living](https://oreilly.com).  I used to [teach Python](https://teamtreehouse.com/kennethlove) as a job.  I also [participate in open source](https://github.com/kennethlove).  I do a lot of other things, too, but you're probably not here for them.
+Heya! I'm Kenneth. I write [code for a living](https://oreilly.com). I used to [teach Python](https://teamtreehouse.com/kennethlove) as a job. I also [participate in open source](https://github.com/kennethlove). I also offer
+[private mentoring](/mentoring/) and [code review](/code-review/). I do a lot of other things, too, but you're probably not here for them.
 
-I've been a developer for well over a decade now. I've worked for [ecommerce sites](https://tindie.com), [design firms](https://bricksf.com), and did freelance development for a long time.  I have experience 
-setting up servers, using third-party services, building bots for various systems, and more. I also built a pretty popular [collection of mixins](https://github.com/brack3t/django-braces) for Django's class-based 
+I've been a developer for well over a decade now. I've worked for [ecommerce sites](https://tindie.com), [design firms](https://bricksf.com), and did freelance development for a long time.  I have experience
+setting up servers, using third-party services, building bots for various systems, and more. I also built a pretty popular [collection of mixins](https://github.com/brack3t/django-braces) for Django's class-based
 views. Some of them even got [merged into Django itself](https://github.com/django/django/commit/e5cb4e14118f3a508e3bc00ee7cd50bb0f18a61d).
 
 I'm also a frequent conference presenter and sometimes do programming live streams.
