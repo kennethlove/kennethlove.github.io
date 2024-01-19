@@ -55,5 +55,7 @@ track record. I'd love to help you have a more welcoming and empowering onboardi
 > I understand concepts that I couldn’t fathom a year ago. I feel confidence in areas I never knew I had!
 > * Alissa V.
 
-> Every tech company should be [onboarding like] this.
-> * Jesse C.
+> Kenneth is one of two people that I credit for helping me craft a career from nothing. They have a cogency to their teaching that only comes from a mastery of the subject material. (They’d likely refuse to be as confident in themselves — I promise you, I have never seen anyone wield Python like this before.)
+>
+> The amount of gratitude and respect I owe and have in their regard are limitless — you will undoubtedly be pleased with their tutoring help.
+> * Dillon R.
