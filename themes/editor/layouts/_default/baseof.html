@@ -10,7 +10,7 @@
         "enableSourceMap" (not hugo.IsProduction)
         "outputStyle" (cond hugo.IsProduction "compressed" "expanded")
         "targetPath" "dist/kennethlove.css"
-        "transpiler" "dartsass"
+        "transpiler" "libsass"
       }}
       {{ with . | toCSS $opts }}
         {{ if hugo.IsProduction }}
