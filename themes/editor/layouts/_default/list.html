@@ -3,12 +3,12 @@
     <header>
         <h1>{{.Title}}</h1>
     </header>
-    {{.Content}}
 
-    <nav>
+    <nav id="post-list">
         {{ range .Data.Pages }}
         <article>
-            <a href="{{ .Permalink }}">{{ .Date.Format "2006-01-02" }} | {{ .Title }}</a>
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+            <p class="date">{{ .Date.Format "2006-01-02" }}</p>
             <p>{{ .Description }}</p>
         </article>
         {{ end }}

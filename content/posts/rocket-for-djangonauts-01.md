@@ -1,4 +1,8 @@
++++
+draft = true
++++
 # Rocket for Djangonauts 01
+
 ## Hello World
 
 Rocket is a web framework for Rust that is great for building fast and
@@ -20,7 +24,7 @@ for Rust but, like `npm`, it also runs tasks and commands for you. Since
 our project is going to mimic the polls tutorial, we'll name it `polls`.
 
 ```sh
-$ cargo new polls
+cargo new polls
 ```
 
 You should now have a new directory named `polls` with the following
@@ -66,7 +70,7 @@ This is the version I'll be using for the tutorial, so if yours is
 newer, you might have to adjust your code accordingly. You'll find all
 of Rocket's documentation on its website at rocket.rs.
 
-## Hello, Rocket!
+## Hello, Rocket
 
 Now that we have Rocket installed, we can run our server and see it in
 action. We'll start by replacing what's in `main.rs` with the following:

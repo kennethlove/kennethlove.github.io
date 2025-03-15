@@ -2,7 +2,6 @@
 title: Kenneth Love
 date: 2017-05-16
 publishdate: 2017-05-16
-markup: mmark
 ---
 
 # Overview

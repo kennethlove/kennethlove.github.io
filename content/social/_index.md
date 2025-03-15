@@ -2,7 +2,6 @@
 title: Social
 date: 2017-05-16
 publishdate: 2017-05-16
-markup: mmark
 ---
 
 You can find me online at various places:

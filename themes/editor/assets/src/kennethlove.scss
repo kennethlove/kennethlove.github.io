@@ -1,4 +1,5 @@
-@import '_colors';
+@import 'colors';
+@import 'syntax';
 
 * {
     border: 0 none;
@@ -126,11 +127,12 @@ body {
 
     .post-nav {
         ul {
-            margin-top: -0.8em;
+            margin-top: -0.6em;
 
             li {
                 color: $ff_mint;
-                margin-bottom: 0.1em;
+                margin-bottom: 0.3em;
+                margin-left: 0.5em;
 
                 &::before {
                     content: "├─";
@@ -427,4 +429,18 @@ strong {
             display: none;
         }
     }
+}
+
+#post-list {
+  article {
+    margin-bottom: 1em;
+
+    p {
+      margin-bottom: 0;
+      
+      &.date {
+        color: $ff_pink;
+      }
+    }
+  }
 }

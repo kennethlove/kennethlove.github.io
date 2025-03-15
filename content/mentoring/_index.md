@@ -2,10 +2,10 @@
 title: Mentoring Services
 date: 2023-10-08
 publishdate: 2023-10-08
-markup: mmark
 ---
 
 # Want to learn Python or Django?
+
 I'm offering private 1:1 tutoring via video chat. It's available by the
 hour, once per week per person. [Contact me](/social/) and we'll set up a time for a free, 10 minute consultation.
 
@@ -47,15 +47,18 @@ track record. I'd love to help you have a more welcoming and empowering onboardi
 | $50-100/hour | $235-475 _(5% discount)_ | $450-900 _(10% discount)_ |
 | Great for quick refreshers, code consultations, and very targeted tutoring. Mentoring is presented on a sliding scale. [Reach out](/social/) and we can agree on a price. | Five hours gives us time to explore and dive into a new facet of Python or Django. | The more hours, the more you can learn! Choose this option if you’re new to Python or Django or have a lot on your “to-learn” list. |
 
-
 # Testimonials
+>
 > Kenneth is immeasurably fantastic at meeting me at my position, skill, and bearing and providing directed and meaningful progression to my tasks, goals, and ideas. When I have lofty mile markers, I can easily discuss different approaches to get there, avoid hurdles, or discuss hypotheticals in a challenging dynamic programming environment. And then to top it off, I get the support for learning new approaches in a succinct and tailored meeting. I highly recommend them as a great resource to strengthen your skills.
+>
 > * Chris F.
 
 > I understand concepts that I couldn’t fathom a year ago. I feel confidence in areas I never knew I had!
+>
 > * Alissa V.
 
 > Kenneth is one of two people that I credit for helping me craft a career from nothing. They have a cogency to their teaching that only comes from a mastery of the subject material. (They’d likely refuse to be as confident in themselves — I promise you, I have never seen anyone wield Python like this before.)
 >
 > The amount of gratitude and respect I owe and have in their regard are limitless — you will undoubtedly be pleased with their tutoring help.
+>
 > * Dillon R.
