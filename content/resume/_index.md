@@ -43,18 +43,16 @@ knowledge and mentoring abilities, Kenneth can elevate any code base and team.
 
 **Principal Engineer** · February &ndash; September 2026
 
-- Built tools for internal use by other engineers.
-- Helped engineers with issues as they arose.
-- Contributed and maintained a custom framework
-- Onboarded new engineers.
+- Developed internal tools to migrate 100+ services' documentation, ease pub/sub
+  adoption, and other needs.
+- Contributed to and maintained a custom framework used by 100+ services.
 
 **Engineering Manager** · January 2022 &ndash; February 2026
 
 - Lead an engineering team to meet product needs for the search experience.
 - Coordiated with project and product managers, third-party providers, and other
-  teams to achieve needed work.
-- Wrote tickets, helped plan sprints, and handled other team needs.
-- Onboarded new engineers.
+  teams to achieve goals.
+- Wrote tickets, helped plan sprints, and handled other needs as they arose.
 
 **Senior Software Engineer** · August 2021 &ndash; January 2022
 
@@ -65,7 +63,7 @@ knowledge and mentoring abilities, Kenneth can elevate any code base and team.
 
 - Contributed to multiple teams including search, customer analytics, and more.
 - Advanced an internal framework to make development and deployment simpler.
-- Created and ran a dedicated onboarding program for the department.
+- Created, organized, and ran an onboarding program used for 40+ new engineers.
 
 ---
 
@@ -75,7 +73,7 @@ knowledge and mentoring abilities, Kenneth can elevate any code base and team.
 
 - Designed, wrote, and presented curriculum to a worldwide audience of students
   at multiple skill levels.
-- Curricula included Python, Flask, Django, and other related facets.
+- Curricula included 20+ Python, Flask, Django, and other related courses.
 - Designed and created an online certificate program for Python.
 
 ---
@@ -103,7 +101,8 @@ knowledge and mentoring abilities, Kenneth can elevate any code base and team.
 
 **Open Source Developer** · 2006 &ndash; Present
 
-- `django-braces`, a popular collection of mixins for Django's <abbr title="Generic Class-Based Views">GCBV</abbr>.
+- `django-braces`, a popular collection of mixins for Django's
+  <abbr title="Generic Class-Based Views">GCBV</abbr>.
 - Contributions to `django`, the Beeware project, and others.
 - Multiple other released packages.
 
@@ -112,14 +111,14 @@ knowledge and mentoring abilities, Kenneth can elevate any code base and team.
 ## Speaking & Community
 
 ### Conference Speaker
-- **PyCascades** (2018)
-- **PyCon US** (2013, 2014)
-- **DjangoCon US** (2012)
+- **PyCascades** (2018) - "Those Who Can, Teach!"
+- **PyCon US** (2013, 2014) - Django tutorials
+- **DjangoCon US** (2012) - "Views Can Be Classy"
 - Other conferences and events.
 
 ### Organizer
-- **DjangoGirls Portland**
-- **DjangoCon US**
+- **DjangoGirls Portland**, three events.
+- **DjangoCon US** (2018)
 
 ---
 
