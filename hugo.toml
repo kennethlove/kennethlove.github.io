@@ -1,9 +1,7 @@
 baseURL = "https://thekennethlove.com/"
 copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License."
 enableRobotsTXT = true
-languageCode = "en-us"
-pygmentsCodefences = true
-pygmentsUseClasses = true
+locale = "en-us"
 rssLimit = 10
 sectionPagesMenu = "pagesMenu"
 theme = "editor"
@@ -11,6 +9,14 @@ title = "Kenneth Love"
 
 [author]
 name = "Kenneth Love"
+
+[markup]
+[markup.highlight]
+codeFences = true
+useClasses = true
+
+[markup.goldmark.renderer]
+unsafe = true
 
 [permalinks]
 posts = "/:year/:month/:title/"
@@ -27,15 +33,15 @@ url = "/"
 weight = 100
 
 [[menu.main]]
-identifier = "mentoring"
-name = "mentoring.md"
-url = "/mentoring/"
+identifier = "resume"
+name = "resume.md"
+url = "/resume/"
 weight = 110
 
 [[menu.main]]
-identifier = "social"
-name = "social.md"
-url = "/social/"
+identifier = "mentoring"
+name = "mentoring.md"
+url = "/mentoring/"
 weight = 120
 
 [[menu.main]]
@@ -49,3 +55,6 @@ identifier = "posts"
 name = "posts/"
 url = "/posts/"
 weight = 140
+
+[security]
+allowContent = '.*'

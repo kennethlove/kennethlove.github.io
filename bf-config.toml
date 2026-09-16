@@ -1,6 +1,0 @@
-[blackfriday]
-    plainIDAnchors = true
-    extensions = [
-        "fencedCode",
-        "laxHtmlBlocks",
-    ]
