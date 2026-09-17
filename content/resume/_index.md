@@ -32,7 +32,7 @@ knowledge and mentoring abilities, Kenneth can elevate any code base and team.
 - <abbr title="HyperText Markup Language">HTML</abbr>,
   <abbr title="Cascading Stylesheets">CSS</abbr>, HTMX, and JavaScript as
   required.
-- Modern AI-related tools such as Claude Code, Codex, and more.
+- AI-related tools such as Claude Code, Codex, and several more.
 
 ## Experience
 
@@ -114,7 +114,7 @@ knowledge and mentoring abilities, Kenneth can elevate any code base and team.
 - Released packages to make form handling, admin customization, running
   management commands remotely, and migrations easier for Django users.
 
-### Personal Progects
+### Personal Projects
 
 - A Web-based _Hunger Games_-inspired web app (Rust, HTMX).
 - A Brainf*ck development CLI and TUI (Rust).
