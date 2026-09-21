@@ -28,7 +28,7 @@ knowledge and mentoring abilities, Kenneth can elevate any code base and team.
 - Software architecture and design.
 - Python, Django, and Rust.
 - <abbr title="HyperText Markup Language">HTML</abbr>,
-  <abbr title="Cascading Stylesheets">CSS</abbr>, HTMX, and JavaScript as
+  <abbr title="Cascading Stylesheets">CSS</abbr>, htmx, and JavaScript as
   required.
 - AI-related tools such as Claude Code, Codex, and several more.
 
