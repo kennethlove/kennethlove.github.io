@@ -456,6 +456,11 @@ strong {
     max-width: 100%;
   }
 
+  em,
+  strong {
+    color: black;
+  }
+
   blockquote,
   p,
   table,
@@ -475,6 +480,14 @@ strong {
   h5,
   h6 {
     page-break-after: avoid;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
   }
 
   table,

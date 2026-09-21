@@ -6,8 +6,6 @@ publishdate: 2017-05-16
 
 <div class="only-print">
 
-# Kenneth Love
-
 **Portland, Oregon, United States**
 
 - <https://linkedin.com/in/kennethhate>
