@@ -13,7 +13,8 @@ name = "Kenneth Love"
 [markup]
 [markup.highlight]
 codeFences = true
-useClasses = true
+noClasses = false
+style = 'rose-pine-moon'
 
 [markup.goldmark.renderer]
 unsafe = true

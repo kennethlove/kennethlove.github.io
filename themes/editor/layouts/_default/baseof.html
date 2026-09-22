@@ -6,8 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel='stylesheet' preload href='//cdn.jsdelivr.net/npm/hack-font/build/web/hack.css'>
   {{ $colors := resources.Get "css/colors.css" }}
+  {{ $chroma := resources.Get "css/chroma.css" }}
   {{ $main := resources.Get "css/kennethlove.css" }}
-  {{ $css := slice $colors $main | resources.Concat "css/style.css" }}
+  {{ $css := slice $colors $chroma $main | resources.Concat "css/style.css" }}
   {{ if hugo.IsProduction }}
   {{ with $css | minify | fingerprint }}
   <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous" />

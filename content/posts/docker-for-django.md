@@ -38,13 +38,13 @@ and for local commands (like the excellent [`pip-tools`]). Create yourself a
 virtual environment, activate it, install Django, and start a new Django
 project, more-or-less like so:
 
-```bash
+{{< code lang="bash" >}}
 $ mkdir my_project && cd my_project
 $ python3 -m venv venv
 $ source venv/bin/activate
 $ pip install Django
 $ django-admin startproject app
-```
+{{< /code >}}
 
 I'll often just call my project `project` or `app` but feel free to use a
 more descriptive name. Also, at this point, do any project configurations
@@ -57,9 +57,7 @@ the resulting images. If you have some preferred method that I'm not using
 here, feel free to use your method (and tell me about it!). I am _not_ a
 Docker expert, so buyer beware!
 
-_file: `Dockerfile`_
-
-```dockerfile
+{{< code file="Dockerfile" lang="dockerfile" >}}
 FROM python:<USE WHAT'S CURRENT>
 
 RUN apt-get update && \
@@ -78,7 +76,8 @@ ENV PYTHONPATH /opt/app/
 EXPOSE 8000
 
 CMD ["uwsgi", "--ini", "/opt/app/uwsgi.ini"]
-```
+
+{{< /code >}}
 
 Starting from the top, this `Dockerfile` starts by using the `python:3.7` image,
 which gives you a recent Debian version with Python installed. Next, it
@@ -108,9 +107,7 @@ but we won't rely on port 8000 for development or deployment. And, lastly, we
 run `uwsgi` with a `CMD` statement. That statement mentions a `uwsgi.ini` file.
 What's in that?
 
-_file: `app/uwsgi.ini`_
-
-```ini
+{{< code file="app/uswgi.ini" lang="ini">}}
 [uwsgi]
 http-socket = :8000
 chdir = /opt/app
@@ -119,7 +116,7 @@ master = 1
 processes = 2
 threads = 2
 py-autoreload = 3
-```
+{{< /code >}}
 
 Much like with Docker, I am _not_ a `uwsgi` expert, but this seems to work
 really well. Let me walk you through it as well.
@@ -160,9 +157,7 @@ extra bits like `nginx` and a database. We'll configure all of this with a new
 file, `docker-compose.yml`. Because this file is pretty long, I'm going to
 show and explain it section-by-section.
 
-_file: `docker-compose.yml`_
-
-```yaml
+{{< code file="docker-compose.yml" lang="yaml" >}}
 version: "3"
 
 volumes:
@@ -176,7 +171,7 @@ networks:
     driver: bridge
 
 services:
-```
+{{< /code >}}
 
 This section isn't very exciting but it's necessary. First we define the version
 of `docker-compose` that this file should conform to. We're using `"3"` which is
@@ -197,9 +192,7 @@ indented inside the `services` block.
 
 ## `nginx` service
 
-_file: `docker-compose.yml`_
-
-```yaml
+{{< code file="docker-compose.yml" lang="yaml" >}}
 nginx:
   image: nginx:<USE WHAT'S CURRENT>
   ports:
@@ -212,7 +205,7 @@ nginx:
     - frontend
   depends_on:
     - app
-```
+{{< /code >}}
 
 First is our `nginx` section, which will give us the excellent [`nginx` server].
 We tell Docker to use the `nginx` image, version TBD, you'll need to find a
@@ -235,9 +228,7 @@ it should start the `app` service if it's not already running.
 Before I forget, let's look at that `nginx` configuration file. Mine is pretty
 simple at this point.
 
-_file: `data/nginx/app.conf`_
-
-```nginx
+{{< code file="data/nginx/app.conf" lang="nginx" >}}
 upstream app {
     server app:8000;
 }
@@ -253,7 +244,7 @@ server {
         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
     }
 }
-```
+{{< /code >}}
 
 If you're comfortable with `nginx` configuration, you probably understand this
 file, but I'll go over it for those of you, like me, who need an introduction
@@ -274,9 +265,7 @@ IP address for the actual requester (instead of `nginx`).
 Now we can set up our database. I like Postgres the best but if you love another
 database, feel free to use it.
 
-_file: `docker-compose.yml`_
-
-```yaml
+{{< code file="docker-compose.yml" lang="yaml" >}}
 database:
   image: postgres:<USE WHAT'S CURRENT>
   ports:
@@ -288,7 +277,7 @@ database:
     - data/postgres/database_env
   networks:
     - backend
-```
+{{< /code >}}
 
 This should look quite a bit like the `nginx` section from above. Again, we're
 using an image so we don't have to build all of this ourselves. In this case,
@@ -310,13 +299,11 @@ variables in a separate file. If you don't track this file in version control,
 you can store sensitive secrets in it. There are better ways to store secrets,
 though. Let me show you what's in my file:
 
-_file: `data/postgres/database_env`_
-
-```bash
+{{< code file="data/postgres/database_env" lang="bash" >}}
 POSTGRES_USER=database_role
 POSTGRES_PASSWORD=database_password
 POSTGRES_DB=project_database
-```
+{{< /code >}}
 
 This sets up three environment variables. `POSTGRES_USER` allows you to add a
 new role to Postgres. `POSTGRES_PASSWORD` sets the password for either the
@@ -329,9 +316,7 @@ This service is where your Django project lives and runs. It's not that
 different from the previous services but it'll use our `Dockerfile`-produced
 image instead of a pre-built image.
 
-_file: `docker-compose.yml`_
-
-```yaml
+{{< code file="docker-compose.yml" lang="yaml" >}}
 app:
   build: .
   restart: always
@@ -344,7 +329,7 @@ app:
     - backend
   volumes:
     - ./app:/opt/app
-```
+{{< /code >}}
 
 The first difference is the `build` directive. This tells Docker to build the
 `Dockerfile` in the current directory and use the resulting image for this
@@ -371,9 +356,7 @@ This service, and the next one, are the entire reason I wrote this article. I
 know, I went and buried them at the bottom. These two, though, make a few things
 much easier and nicer when you're using Docker.
 
-_file: `docker-compose.yml`_
-
-```yaml
+{{< code file="docker-compose.yml" lang="yaml" >}}
 manage:
   build: .
   command: shell
@@ -384,7 +367,7 @@ manage:
     - ./app:/opt/app
   depends_on:
     - database
-```
+{{< /code >}}
 
 I'm not going to cover `build`, `networks`, `volumes`, or `depends_on` since
 you've seen them before. Besides, most of the magic is in `command` and
@@ -411,9 +394,7 @@ container just like our `app` one. Again, this will make running test easier
 and make sure that our tests run in an environment very similar to the project
 itself. It's a win-win in my book!
 
-_file: `docker-compose.yml`_
-
-```yaml
+{{< code file="docker-compose.yml" lang="yaml" >}}
 tests:
   build: .
   command: /opt/app/
@@ -426,7 +407,7 @@ tests:
   depends_on:
     - database
     - app
-```
+{{< /code >}}
 
 Again, I'm going to skip `build`, `networks`, `volumes`, and `depends_on`. You've
 seen `restart` before but this time it's set to `"no"`. This will let the
@@ -441,14 +422,12 @@ it to our project so it can discover tests throughout the project.
 We do need to add a `pytest.ini` file, though, to configure `pytest` just a bit.
 You'll also want to add `pytest` and `pytest-django` to your `requirements.txt`.
 
-_file: `app/pytest.ini`_
-
-```ini
+{{< code="app/pytest.ini" lang="ini">}}
 [pytest]
 norecursedirs = __pycache__
 DJANGO_SETTINGS_MODULE = app.settings
 python_file = tests.py test_*.py *_tests.py
-```
+{{< /code >}}
 
 This configuration tells `pytest` not to look through any `__pycache__`
 directories for tests. It also sets where Django's settings live for
