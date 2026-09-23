@@ -1,9 +1,9 @@
----
-title: Mentoring Services
-date: 2023-10-08
-draft: false
-summary: Mentoring services from Kenneth Love, experienced software engineer and teacher.
----
++++
+title = "Mentoring Services"
+date = 2023-10-08
+draft = false
+summary = "Mentoring services from Kenneth Love, experienced software engineer and teacher."
++++
 
 # Want to learn Python or Django?
 

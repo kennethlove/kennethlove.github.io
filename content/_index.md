@@ -1,9 +1,9 @@
----
-title: Kenneth Love
-date: 2017-05-16
-draft: false
-summary: Personal site of Kenneth Love. Mentoring services, resume, and blog.
----
++++
+title = "Kenneth Love"
+date = 2017-05-16
+draft = false
+summary = "Personal site of Kenneth Love. Mentoring services, resume, and blog."
++++
 
 # Overview
 

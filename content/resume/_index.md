@@ -1,9 +1,9 @@
----
-title: Resume
-date: 2017-05-16
-draft: false
-summary: Resume for Kenneth Love
----
++++
+title = "Resume"
+date = 2017-05-16
+draft = false
+summary = "Resume for Kenneth Love"
++++
 
 <div class="only-print">
 
