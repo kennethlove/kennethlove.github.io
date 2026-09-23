@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="{{ block "description" . }}{{ .Summary }}{{ end }}">
+  <meta name="description" content='{{ block "description" . }}{{ .Summary }}{{ end }}'>
   <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
   <link rel="preconnect" href="https://cdn.jsdelivr.net">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hack-font/build/web/hack.css" crossorigin>
@@ -23,10 +23,10 @@
   {{ printf `
   <link rel=%q type=%q href=%q title=%q>` .Rel .MediaType.Type .Permalink site.Title | safeHTML }}
   {{ end }}
-  <link rel="apple-touch-icon" sizes="180x180" href="{{ "apple-touch-icon.png" | relURL }}">
-  <link rel="icon" type="image/png" sizes="32x32" href="{{ "favicon-32x32.png" | relURL }}">
-  <link rel="icon" type="image/png" sizes="16x16" href="{{ "favicon-16x16.png" | relURL }}">
-  <link rel="manifest" href="{{ "site.webmanifest" | relURL }}">
+  <link rel="apple-touch-icon" sizes="180x180" href='{{ "apple-touch-icon.png" | relURL }}'>
+  <link rel="icon" type="image/png" sizes="32x32" href='{{ "favicon-32x32.png" | relURL }}'>
+  <link rel="icon" type="image/png" sizes="16x16" href='{{ "favicon-16x16.png" | relURL }}'>
+  <link rel="manifest" href='{{ "site.webmanifest" | relURL }}'>
   <link rel="canonical" href="{{ .Permalink }}">
   {{ partial "opengraph.html" . }}
 </head>
@@ -40,10 +40,10 @@
     <main class="main">{{ block "main" . }} {{ end }}</main>
     <footer>
       <p>This site and its content are distributed as a <a
-      href="https://creativecommons.org/licenses/by-nc-sa/4.0/">by-nc-sa</a>
-      work.<br>If you find any issues, please <a
-      href="https://github.com/kennethlove/kennethlove.github.io">tell me on
-      GitHub</a>.</p>
+          href="https://creativecommons.org/licenses/by-nc-sa/4.0/">by-nc-sa</a>
+        work.<br>If you find any issues, please <a href="https://github.com/kennethlove/kennethlove.github.io">tell me
+          on
+          GitHub</a>.</p>
     </footer>
   </div>
 </body>
