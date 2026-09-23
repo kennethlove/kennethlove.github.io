@@ -1,9 +1,7 @@
 baseURL = "https://thekennethlove.com/"
-copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License."
 enableRobotsTXT = true
 locale = "en-US"
 rssLimit = 10
-sectionPagesMenu = "pagesMenu"
 theme = "editor"
 title = "Kenneth Love"
 
@@ -14,7 +12,6 @@ name = "Kenneth Love"
 [markup.highlight]
 codeFences = true
 noClasses = false
-style = 'rose-pine-moon'
 
 [markup.goldmark.renderer]
 unsafe = true
@@ -59,6 +56,3 @@ identifier = "posts"
 name = "posts/"
 url = "/posts/"
 weight = 140
-
-[security]
-allowContent = '.*'

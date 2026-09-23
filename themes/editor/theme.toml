@@ -3,16 +3,14 @@
 
 name = "FFEditor"
 license = "MIT"
-licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE.md"
-description = ""
-homepage = "http://example.com/"
+description = "Theme based around a text interface and the Fairy Floss colorscheme"
 tags = []
 features = []
-min_version = "0.29"
+min_version = "0.166"
 
 [author]
-  name = ""
-  homepage = ""
+  name = "Kenneth Love"
+  homepage = "https://thekennethlove.com"
 
 # If porting an existing theme
 [original]
