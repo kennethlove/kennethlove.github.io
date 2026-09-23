@@ -115,6 +115,7 @@ figure {
 }
 
 figure blockquote {
+  background-color: var(--ff-violet);
   background-color: oklab(from var(--ff-violet) calc(l - 0.1) a b);
   margin-left: 0;
   padding: 0.5rem;
@@ -127,6 +128,7 @@ figcaption {
 
 figcaption code {
   background: var(--ff-violet);
+  color: var(--ff-lilac);
   color: oklab(from var(--ff-lilac) calc(l + 0.15) a b);
   display: inline-block;
   padding: 0.125rem 0.3rem;
@@ -160,9 +162,8 @@ strong {
 }
 
 table {
-  border-collapse: collapse;
-  border-spacing: 0;
   border-collapse: separate;
+  border-spacing: 0;
 }
 
 table th {
@@ -400,6 +401,7 @@ footer {
 
 .post-content p code {
   background: var(--ff-violet);
+  color: var(--ff-lilac);
   color: oklab(from var(--ff-lilac) calc(l + 0.15) a b);
   display: inline-block;
   padding: 0.125rem 0.3rem;
@@ -431,38 +433,6 @@ footer {
 
 #post-list article p.date {
   color: var(--ff-pink);
-}
-
-/* ==========================================================================
-   Components — Spoiler
-   ========================================================================== */
-
-.spoiler {
-  background: var(--ff-lightyellow);
-  color: var(--ff-purple);
-  margin-bottom: 1em;
-  max-width: 58em;
-}
-
-.spoiler header {
-  background: repeating-linear-gradient(45deg,
-      var(--ff-darkyellow),
-      var(--ff-darkyellow) 30px,
-      var(--ff-yellow) 30px,
-      var(--ff-yellow) 60px);
-  color: var(--ff-purple);
-  cursor: pointer;
-  font-weight: bold;
-  padding: 0.5rem 0;
-  text-align: center;
-}
-
-.spoiler main {
-  padding: 1rem;
-}
-
-.spoiler main.hidden {
-  display: none;
 }
 
 /* ==========================================================================

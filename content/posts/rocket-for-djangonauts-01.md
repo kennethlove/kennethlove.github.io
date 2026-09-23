@@ -1,6 +1,8 @@
 +++
+title = "Rocket for Djangonauts 01"
 draft = true
 +++
+
 # Rocket for Djangonauts 01
 
 ## Hello World

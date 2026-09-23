@@ -1,8 +1,8 @@
 .idea/
 .vscode/
-.sass-cache/
-.hg/
 npm-debug.log
 node_modules/
 .hugo_build.lock
 public/
+resources/
+.DS_Store

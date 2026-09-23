@@ -1,25 +1,9 @@
-// For format details, see https://aka.ms/devcontainer.json. For config options, see the
-// README at: https://github.com/devcontainers/templates/tree/main/src/ubuntu
 {
-    "name": "Ubuntu",
-    // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+    "name": "Hugo",
     "image": "mcr.microsoft.com/devcontainers/base:jammy",
     "features": {
         "ghcr.io/devcontainers/features/hugo:1": {
             "version": "0.166.0"
         }
-    },
-    "forwardPorts": [
-        1313
-    ],
-    "appPort": [
-        1313
-    ],
-    "postStartCommand": "nohup hugo server --bind 0.0.0.0 --port 1313 --disableFastRender > /dev/null 2>&1 &"
-    // Use 'postCreateCommand' to run commands after the container is created.
-    // "postCreateCommand": "uname -a",
-    // Configure tool-specific properties.
-    // "customizations": {},
-    // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
-    // "remoteUser": "root"
+    }
 }
