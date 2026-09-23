@@ -198,14 +198,6 @@ table tbody tr:first-child td {
   padding-bottom: 1rem;
 }
 
-.side {
-  /* padding-left: 1rem; */
-}
-
-.side h1 {
-  font-size: inherit;
-}
-
 .main {
   padding-right: 1rem;
 }
@@ -216,16 +208,19 @@ table tbody tr:first-child td {
   }
 
   .side {
-    grid-row-start: 2;
-    grid-row-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .main {
-    grid-row-start: 1;
-    grid-row-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
     grid-column-start: 1;
     grid-column-end: 2;
     padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   blockquote,
@@ -286,6 +281,20 @@ table tbody tr:first-child td {
 }
 
 /* ==========================================================================
+   Sidebar — Name
+   ========================================================================== */
+
+#name {
+  font-size: inherit;
+  /* margin-left: 1rem; */
+  text-decoration: none;
+}
+
+#name a {
+  color: inherit;
+}
+
+/* ==========================================================================
    Sidebar — Navigation
    ========================================================================== */
 
@@ -318,6 +327,24 @@ table tbody tr:first-child td {
   margin-left: 0.5em;
   text-decoration: none;
 }
+
+@media screen and (max-width: 960px) {
+  .side .post-nav {
+    display: none;
+  }
+
+  .side .nav ul {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: left;
+    justify-content: space-between;
+  }
+
+  .side .nav ul li {
+    margin: 0;
+  }
+}
+
 
 /* ==========================================================================
    Components — Post Details, Post Content, Post List

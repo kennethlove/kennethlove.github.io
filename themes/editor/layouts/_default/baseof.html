@@ -24,10 +24,10 @@
 
 <body>
   <div class="container">
-    <aside class="side no-print">
-      <h1>Kenneth Love</h1>
+    <div class="side no-print">
+      <h1 id="name"><a href="/">Kenneth Love</a></h1>
       {{ partial "menu.html" . }}
-    </aside>
+    </div>
     <main class="main">{{ block "main" . }} {{ end }}</main>
   </div>
 </body>
