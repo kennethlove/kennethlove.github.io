@@ -19,6 +19,9 @@ style = 'rose-pine-moon'
 [markup.goldmark.renderer]
 unsafe = true
 
+[params]
+images = ["/android-chrome-512x512.png"]
+
 [permalinks]
 posts = "/:year/:month/:title/"
 
