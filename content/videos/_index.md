@@ -2,6 +2,7 @@
 title: Videos
 date: 2017-05-16
 draft: false
+summary: Videos of me speaking or livestreaming coding
 ---
 
 Because of the work I do and the work I've done in the past, there are a lot of videos of me speaking and teaching. I've linked to some of my more recent and favorite ones below, but this isn't an exhaustive list.
