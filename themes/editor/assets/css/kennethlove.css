@@ -511,11 +511,10 @@ footer {
 }
 
 /* ==========================================================================
-   Accessibility — Screen Reader / Speech Only
+   Accessibility — Hide from Screen
    ========================================================================== */
 
-@media only speech,
-only screen {
+@media screen {
   .only-print {
     display: none;
   }
