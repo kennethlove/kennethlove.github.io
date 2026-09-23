@@ -1,5 +1,5 @@
 ---
-title: Resume - Kenneth Love
+title: Resume
 date: 2017-05-16
 draft: false
 ---

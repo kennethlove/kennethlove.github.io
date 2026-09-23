@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="{{ block "description" . }}{{ .Summary }}{{ end }}">
   <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
-  <link rel='stylesheet' preload href='//cdn.jsdelivr.net/npm/hack-font/build/web/hack.css'>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hack-font/build/web/hack.css">
   {{ $colors := resources.Get "css/colors.css" }}
   {{ $chroma := resources.Get "css/chroma.css" }}
   {{ $main := resources.Get "css/kennethlove.css" }}

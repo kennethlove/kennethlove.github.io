@@ -1,3 +1,5 @@
+{{ define "title" }}"{{ .Title }}" from {{ .Site.Title }}{{ end }}
+
 {{ define "main" }}
 <section class="blog-post">
     <article class="post-content">
@@ -5,7 +7,7 @@
             <h1 id="title">{{ .Title }}</h1>
 
             <div class="post-details">
-                <time timestamp="{{ .Date }}">Posted on {{ .Date.Format "Mon Jan 2, 2006" }}</time>
+                <time datetime="{{ .Date.Format "2006-01-02" }}">Posted on {{ .Date.Format "Mon Jan 2, 2006" }}</time>
                 <ul class="no-bullets inline-list">
                     {{ with .Params.tags }}
                     {{ range . }}
