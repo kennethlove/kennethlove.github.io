@@ -114,8 +114,7 @@ figure {
 }
 
 figure blockquote {
-  background-color: var(--ff-violet);
-  background-color: oklab(from var(--ff-violet) calc(l - 0.1) a b);
+  background-color: #47415e;
   margin-left: 0;
   padding: 0.5rem;
 }
@@ -127,8 +126,7 @@ figcaption {
 
 figcaption code {
   background: var(--ff-violet);
-  color: var(--ff-lilac);
-  color: oklab(from var(--ff-lilac) calc(l + 0.15) a b);
+  color: #f6d3ff;
   display: inline-block;
   padding: 0.125rem 0.3rem;
 }
@@ -389,8 +387,7 @@ footer {
 
 .post-content p code {
   background: var(--ff-violet);
-  color: var(--ff-lilac);
-  color: oklab(from var(--ff-lilac) calc(l + 0.15) a b);
+  color: #f6d3ff;
   display: inline-block;
   padding: 0.125rem 0.3rem;
 }
