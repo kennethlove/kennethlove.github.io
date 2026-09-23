@@ -39,7 +39,7 @@ You can email me by combining **my name** and **this domain name**.
 [teach Python]: https://teamtreehouse.com/kennethlove
 [participate in open source]: https://github.com/kennethlove
 [private mentoring]: /mentoring/
-[code review]: /mentoring/
+[code review]: /mentoring/#code-review
 [learning platforms]: https://www.oreilly.com
 [ecommerce sites]: https://www.tindie.com
 [design firms]: https://bricksf.com
