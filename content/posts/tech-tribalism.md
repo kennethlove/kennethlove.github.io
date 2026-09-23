@@ -10,7 +10,7 @@ tags = [
 categories = [
     "Blog"
 ]
-description = "Technology has its own -ism and we need to stop it."
+summary = "Technology has its own -ism and we need to stop it."
 +++
 
 For a long time, people involved in tech have identified themselves by what they

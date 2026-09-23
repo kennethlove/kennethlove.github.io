@@ -7,7 +7,7 @@ categories = [
     "Blog",
     "Meta"
 ]
-description = "First post on a new system."
+summary = "First post on a new system."
 +++
 
 Hey there.

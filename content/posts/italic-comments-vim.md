@@ -15,7 +15,7 @@ categories = [
     "Blog",
     "Vim"
 ]
-description = "The work I had to do to get italic comments in Vim. This work only applies to iTerm on Mac OS X."
+summary = "The work I had to do to get italic comments in Vim. This work only applies to iTerm on Mac OS X."
 +++
 
 I guess it all started with [Operator Mono]. It's absolutely beautiful. If,

@@ -2,7 +2,6 @@
 title = "My Favorite Docker Setup for Django Development"
 date = 2019-06-14T15:47:01-07:00
 draft = false
-publishdate = 2023-10-09
 tags = [
     "programming",
     "docker",
@@ -13,7 +12,7 @@ categories = [
     "Blog",
     "Programming"
 ]
-description = "This is my current Docker set up for Django development. I think it works really well, so I wanted to share."
+summary = "This is my current Docker set up for Django development. I think it works really well, so I wanted to share."
 +++
 
 **Note:** This article was written in 2019. I've updated what I can see as being

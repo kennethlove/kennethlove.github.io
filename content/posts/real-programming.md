@@ -11,7 +11,7 @@ categories = [
     "Blog",
     "Programming"
 ]
-description = "My wife had a problem and I solved it with programming...but didn't write a single line of code."
+summary = "My wife had a problem and I solved it with programming...but didn't write a single line of code."
 +++
 I want to tell you about some programming I did recently. It might not be what you think of as programming, though. Trust me, though, it is and it just might change how you think of this field.
 
