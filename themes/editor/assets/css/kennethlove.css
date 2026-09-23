@@ -194,11 +194,12 @@ table tbody tr:first-child td {
 
 .container {
   display: grid;
-  gap: 0.5rem;
+  gap: 1rem;
+  padding-bottom: 1rem;
 }
 
 .side {
-  padding-left: 1rem;
+  /* padding-left: 1rem; */
 }
 
 .side h1 {
@@ -242,6 +243,7 @@ table tbody tr:first-child td {
   .side {
     grid-column-start: 1;
     grid-column-end: 3;
+    padding-left: 1rem;
   }
 
   .main {
@@ -258,6 +260,7 @@ table tbody tr:first-child td {
   .side {
     grid-column-start: 1;
     grid-column-end: 2;
+    padding-left: 1rem;
   }
 
   .main {
