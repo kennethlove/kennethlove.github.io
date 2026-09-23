@@ -35,9 +35,6 @@ seriously.
 
 You can email me by combining **my name** and **this domain name**.
 
-This site and its content are distributed as a [by-nc-sa] work. If you find any
-issues, please [tell me on GitHub].
-
 
 [teach Python]: https://teamtreehouse.com/kennethlove
 [participate in open source]: https://github.com/kennethlove
@@ -52,7 +49,6 @@ issues, please [tell me on GitHub].
 [live streams]: https://www.youtube.com/watch?v=DOR7XdLWey4
 [helped organize workshops]: https://djangogirls.org/portland/
 [conferences]: https://djangocon.us
-[by-nc-sa]: http://creativecommons.org/licenses/by-nc-sa/4.0/
 [tell me on GitHub]: https://github.com/kennethlove/kennethlove.github.io
 [Mastodon]: https://tech.lgbt/@klove
 [GitHub]: https://github.com/kennethlove
