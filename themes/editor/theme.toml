@@ -11,9 +11,3 @@ min_version = "0.166"
 [author]
   name = "Kenneth Love"
   homepage = "https://thekennethlove.com"
-
-# If porting an existing theme
-[original]
-  name = ""
-  homepage = ""
-  repo = ""

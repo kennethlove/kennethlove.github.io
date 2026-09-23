@@ -99,7 +99,6 @@ blockquote,
 p,
 table {
   margin-top: 0;
-  max-width: 80vw;
 }
 
 blockquote,
@@ -202,6 +201,7 @@ table tbody tr:first-child td {
 
 .main {
   padding-right: 1rem;
+  max-width: 72ch;
 }
 
 @media screen and (max-width: 960px) {
@@ -219,12 +219,6 @@ table tbody tr:first-child td {
     grid-row-end: 3;
     grid-column-start: 1;
     grid-column-end: 2;
-  }
-
-  blockquote,
-  p,
-  table {
-    max-width: 95vw;
   }
 }
 
@@ -368,7 +362,6 @@ footer {
 .post-details {
   border-bottom: 1px solid var(--ff-darkyellow);
   margin-bottom: 1rem;
-  max-width: 70vw;
 }
 
 .post-details ul {
@@ -391,12 +384,7 @@ footer {
 
 .post-content figure img {
   height: auto;
-  max-width: 50vw;
   width: 100%;
-}
-
-.post-content p {
-  max-width: 70vw;
 }
 
 .post-content p code {
