@@ -287,11 +287,12 @@ table tbody tr:first-child td {
 #name {
   font-size: inherit;
   /* margin-left: 1rem; */
-  text-decoration: none;
 }
 
 #name a {
   color: inherit;
+  border-bottom: 0;
+  font-weight: bold;
 }
 
 /* ==========================================================================
