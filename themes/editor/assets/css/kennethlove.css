@@ -480,6 +480,10 @@ details[open] summary::marker {
     content: "";
   }
 
+  details[open] summary::marker {
+    content: "";
+  }
+
   .no-print {
     display: none;
   }
@@ -538,12 +542,14 @@ details[open] summary::marker {
     font-size: 1.5rem;
   }
 
+  details,
   table,
   blockquote,
   ul,
   ol {
     page-break-inside: avoid;
   }
+
 }
 
 /* ==========================================================================
