@@ -1,16 +1,19 @@
 +++
-title = "Resume"
+title = "Kenneth Love's Resume"
 date = 2017-05-16
 draft = false
 summary = "Resume for Kenneth Love"
 +++
 
+# Kenneth Love
+
 <div class="only-print">
 
 **Portland, Oregon, United States**
 
-- <https://linkedin.com/in/kennethhate>
+- <https://thekennethlove.com/resume>
 - <https://github.com/kennethlove>
+- <https://linkedin.com/in/kennethhate>
 
 </div>
 
