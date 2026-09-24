@@ -153,6 +153,7 @@ em {
   font-style: italic;
 }
 
+b,
 strong {
   color: var(--ff-mint);
   font-weight: bold;
@@ -367,7 +368,7 @@ footer {
 }
 
 .post-details ul li {
-  margin-right: 1rem;
+  margin-right: 1ch;
 }
 
 .post-details time {
@@ -390,12 +391,13 @@ footer {
   color: #f6d3ff;
   display: inline-block;
   padding: 0.125rem 0.3rem;
+  padding: 0.25ch 0.5ch;
 }
 
 .post-content pre,
 .post-content .highlight pre {
   overflow-x: auto;
-  padding: 1rem;
+  padding: 1ch;
 }
 
 .post-content pre code,
@@ -409,7 +411,7 @@ footer {
 }
 
 #post-list article {
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
 }
 
 #post-list article p {
@@ -418,6 +420,12 @@ footer {
 
 #post-list article p.date {
   color: var(--ff-pink);
+}
+
+.post-tags::before {
+  content: "\1F3F7 ";
+  margin-right: 1ch;
+  margin-top: 0.25rem;
 }
 
 /* ==========================================================================
@@ -439,11 +447,39 @@ footer {
   margin: 0;
 }
 
+details summary::marker {
+  content: "[+] ";
+}
+
+details summary:hover::marker {
+  color: var(--ff-yellow);
+  cursor: pointer;
+}
+
+details[open] summary::marker {
+  content: "[-] ";
+}
+
 /* ==========================================================================
    Print Styles
    ========================================================================== */
 
 @media print {
+
+  /* Reveal closed <details> content when printing */
+  details:not([open])>*:not(summary) {
+    display: block;
+  }
+
+  /* Chrome/Chromium 131+ hides closed content via ::details-content */
+  details::details-content {
+    content-visibility: visible !important;
+  }
+
+  details summary::marker {
+    content: "";
+  }
+
   .no-print {
     display: none;
   }

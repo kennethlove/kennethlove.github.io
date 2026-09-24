@@ -17,11 +17,12 @@ summary = "Resume for Kenneth Love"
 ## Summary
 
 In the past twenty years, Kenneth Love has been known for their Python and
-Django knowledge, sharing that knowledge widely and freely, a community builder,
-and open source contributor. Kenneth's `django-braces` package has been used in
-millions of projects. Kenneth has many years of experience explaining technical
-concepts to learners of all levels and abilities. Between their technical
-knowledge and mentoring abilities, Kenneth can elevate any code base and team.
+Django knowledge, sharing that knowledge widely and freely, building
+communities, and contributing to open source. Kenneth's `django-braces` package
+has been used in millions of projects. Kenneth has many years of experience
+explaining technical concepts to learners of all levels and abilities. Between
+their technical knowledge and mentoring abilities, Kenneth can elevate any code
+base and team.
 
 ## Skills
 
@@ -37,7 +38,9 @@ knowledge and mentoring abilities, Kenneth can elevate any code base and team.
 
 ### O'Reilly Media
 
-**Principal Engineer** &bull; February &ndash; September 2026
+<details open name="oreilly">
+  <summary><b>Principal Engineer</b> &bull; February &ndash; September 2026
+  </summary>
 
 - Developed internal tools to migrate 100+ services' documentation, ease pub/sub
   adoption, and other needs.
@@ -45,8 +48,11 @@ knowledge and mentoring abilities, Kenneth can elevate any code base and team.
 - Aided engineers on 15+ teams throughout the engineering department.
 - Used AI-related tools for development assistance, research, and as a component
   of larger systems.
+</details>
 
-**Engineering Manager** &bull; January 2022 &ndash; February 2026
+<details name="oreilly">
+  <summary><b>Engineering Manager</b> &bull; January 2022 &ndash; February 2026
+  </summary>
 
 - Lead an engineering team to meet product needs for the search experience. The
   search project was the focus for the entire duration.
@@ -55,15 +61,21 @@ knowledge and mentoring abilities, Kenneth can elevate any code base and team.
 - Wrote tickets, helped plan sprints, and handled other needs as they arose.
 - Worked to promote engineers both in title and to better team fits.
 - Investigated AI tools and both led and encouraged engineers to do the same.
+</details>
 
-**Senior Software Engineer** &bull; August 2021 &ndash; January 2022
+<details name="oreilly">
+  <summary><b>Senior Software Engineer</b> &bull; August 2021 &ndash; January 2022
+  </summary>
 
 - Worked on product teams building new features and improving existing ones.
   Projects worked on added new features to the learning platform or facilitated
   future features.
 - Continued to refine and administer the onboarding program.
+</details>
 
-**Software Engineer** &bull; September 2017 &ndash; August 2021
+<details name="oreilly">
+  <summary><b>Software Engineer</b> &bull; September 2017 &ndash; August 2021
+  </summary>
 
 - Contributed to multiple teams including search, customer analytics, and
   others.
@@ -72,46 +84,62 @@ knowledge and mentoring abilities, Kenneth can elevate any code base and team.
 - Created, organized, and ran an onboarding program used for 40+ new engineers.
   This program centralized and standardized orientation and also saved the
   company from having to pay for travel for new hires and their mentor.
+</details>
 
 ### Treehouse Island Inc
 
-**Python Instructor** &bull; April 2014 &ndash; September 2017
+<details>
+  <summary><b>Python Instructor</b> &bull; April 2014 &ndash; September 2017
+  </summary>
 
 - Designed, wrote, and presented curriculum to a worldwide audience of students
   at multiple skill levels.
 - Curricula included 20+ Python, Flask, Django, and other related courses.
 - Designed and created an online certificate program for Python.
+</details>
 
 ### NewCircle
 
-**Instructor** &bull; January &ndash; March 2014
+<details>
+  <summary><b>Instructor</b> &bull; January &ndash; March 2014
+  </summary>
 
 - Led week-long courses for profressional advancement.
 - Taught Python and Django.
+</details>
 
 ### Contractor
 
-**Developer** &bull; 2009 &ndash; January 2014
+<details name="contractor">
+  <summary><b>Developer</b> &bull; 2009 &ndash; January 2014
+  </summary>
 
 - Freelance web development for various clients.
 - Created a ridiculously complex CMS for apartment communities.
 - Helped clients migrate to Python and Django solutions.
+</details>
 
-**Mentoring** &bull; 2012 &ndash;
+<details name="contractor">
+  <summary><b>Mentoring</b> &bull; 2012 &ndash;
+  </summary>
 
 - Helped mentees understand new concepts such as programming, Python, or Django.
 - Advised mentees on career progression.
 - Provided guidance on starting onboarding programs.
+</details>
 
 ### Open Source
 
-**Open Source Developer** · 2006 &ndash; Present
+<details>
+  <summary><b>Open Source Contributor</b> · 2006 &ndash; Present
+  </summary>
 
 - `django-braces`, a popular collection of mixins for Django's
   <abbr title="Generic Class-Based Views">GCBV</abbr>.
 - Contributions to `django`, the Beeware project, and others.
 - Released packages to make form handling, admin customization, running
   management commands remotely, and migrations easier for Django users.
+</details>
 
 ### Personal Projects
 

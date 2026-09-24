@@ -26,10 +26,9 @@ others. And, well, I'm a lover of open source and I spend _hours_ twiddling with
 my environment set up already; surely I can find a way to do this on my own,
 right?
 
-<figure>
-<figcaption><p>What I ended up with</p></figcaption>
-<img src="/media/vim-with-italic-comments/preview.png" alt="Screenshot of vim showing a typical monospaced font for code and an italic monospaced font for the comments">
-</figure>
+{{% img src="preview.png" alt="Screenshot of vim showing a typical monospaced font for code and an italic monospaced font for the comments" %}}
+What I ended up with
+{{% /img %}}
 
 ### Finding fonts
 
@@ -66,10 +65,9 @@ Whichever font is first, you need to change the following attributes:
 
 You'll find these attributes in the `Font Info` dialog which you can open through the `Element` menu.
 
-<figure>
-<figcaption><p>Font info window showing already changed values</p></figcaption>
-<img src="/media/vim-with-italic-comments/font-info.png" alt="Screenshot of Font Forge's font info window">
-</figure>
+{{% img src="font-info.png" alt="Screenshot of Font Forge's font info window" %}}
+Font info window showing already changed values
+{{% /img %}}
 
 You may get a dialog asking to change an existing value to a new, random one. Go ahead and let the system do that. When you're happy with your names, go to 
 the `File > Generate Fonts` menu option.  Under the font name (which you should change if it hasn't been changed already), change the file type to "OpenType 
@@ -81,10 +79,9 @@ Once you have both of your fonts (or, I suppose, you could do a few more, too, i
 OS. Again, I've only tested this with Mac OS X, but this part _should_ work with other systems, too. At this point, you can change the font that iTerm uses 
 for your profile.
 
-<figure>
-<figcaption><p>iTerm2's profile font setting, already changed to HackedOff</p></figcaption>
-<img src="/media/vim-with-italic-comments/iterm-font-setting.png" alt="Screenshot of iTerm2's settings window showing the profile's font changed to HackedOff Regular">
-</figure>
+{{% img src="iterm-font-setting.png" alt="Screenshot of iTerm2's settings window showing the profile's font changed to HackedOff Regular" %}}
+iTerm2's profile font setting, already changed to HackedOff
+{{% /img %}}
 
 I'd also go ahead and tell Vim to use an italic font for comments at this point. This is just a single line in your `.vimrc` file.
 
@@ -119,10 +116,9 @@ $ tic ~/.config/xterm-256color-italic.terminfo
 
 Then turn on this profile in iTerm.
 
-<figure>
-<figcaption><p>iTerm2's terminal reporting setting, already changed to xterm-256color-italic</p></figcaption>
-<img src="/media/vim-with-italic-comments/iterm-terminal-setting.png" alt="Screenshot of iTerm2's settings window with the 'report terminal as' setting changed to 'xterm-256color-italic'">
-</figure>
+{{% img src="iterm-terminal-setting.png" alt="Screenshot of iTerm2's settings window with the 'report terminal as' setting changed to 'xterm-256color-italic" %}}
+iTerm2's profile font setting, already changed to HackedOff
+{{% /img %}}
 
 Now, inside of Tmux is a different beast. Tmux reports its terminal as `screen-256color` but that won't include our italics. The article linked above 
 recommends sending some info to `tic` through `cat` but modern [MacOS's `tic` doesn't seem to compile new directives through user 
