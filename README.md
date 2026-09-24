@@ -1,8 +1,8 @@
 # thekennethlove.com
 
-Source for [thekennethlove.com](https://thekennethlove.com/) — personal site of
-Kenneth Love: resume, mentoring, videos, and posts. Built with
-[Hugo](https://gohugo.io/), deployed on Netlify.
+Source for [thekennethlove.com](https://thekennethlove.com/), the personal site
+of Kenneth Love: resume, mentoring, videos, and posts. Built with
+[Hugo](https://gohugo.io/), deployed on [Netlify](https://netlify.com).
 
 ## Requirements
 
@@ -58,7 +58,7 @@ Front matter is TOML everywhere:
 title = "My Cool Post"
 date = 2026-09-23T12:00:00-07:00
 draft = true
-summary = "One sentence — shown as the meta description and link preview."
+summary = "One sentence which is shown as the meta description and link preview."
 categories = ["Blog"]
 tags = ["stuff"]
 +++
