@@ -49,13 +49,13 @@ form,
 ul,
 ol,
 dl {
-  margin: 1em 0;
+  margin: 1rem 0;
 }
 
 li,
 dd,
 blockquote {
-  margin-left: 2em;
+  margin-left: 2rem;
 }
 
 h1,
@@ -67,6 +67,7 @@ h6 {
   font-size: 1rem;
   font-style: normal;
   font-weight: bold;
+  letter-spacing: 0.125ch;
   margin-top: 2em;
   text-decoration: underline;
 }
@@ -153,6 +154,10 @@ em {
   font-style: italic;
 }
 
+i {
+  font-style: italic;
+}
+
 b,
 strong {
   color: var(--ff-mint);
@@ -185,6 +190,19 @@ table td em {
 table tbody tr:first-child td {
   font-weight: bold;
   text-align: center;
+}
+
+li code,
+p code {
+  background: var(--ff-violet);
+  color: #f6d3ff;
+  display: inline-block;
+  padding: 0.125rem 0.3rem;
+  padding: 0.25ch 0.5ch;
+}
+
+abbr {
+  cursor: help;
 }
 
 /* ==========================================================================
@@ -386,14 +404,6 @@ footer {
   width: 100%;
 }
 
-.post-content p code {
-  background: var(--ff-violet);
-  color: #f6d3ff;
-  display: inline-block;
-  padding: 0.125rem 0.3rem;
-  padding: 0.25ch 0.5ch;
-}
-
 .post-content pre,
 .post-content .highlight pre {
   overflow-x: auto;
@@ -465,15 +475,20 @@ details[open] summary::marker {
    ========================================================================== */
 
 @media print {
-
-  /* Reveal closed <details> content when printing */
-  details:not([open])>*:not(summary) {
-    display: block;
+  #print-options {
+    display: none;
   }
 
-  /* Chrome/Chromium 131+ hides closed content via ::details-content */
-  details::details-content {
-    content-visibility: visible !important;
+  html:has(#print-full:checked) {
+
+    /* Reveal closed <details> content */
+    details:not([open])>*:not(summary) {
+      display: block;
+    }
+
+    details::details-content {
+      content-visibility: visible !important;
+    }
   }
 
   details summary::marker {
@@ -511,6 +526,12 @@ details[open] summary::marker {
   em,
   strong {
     color: black;
+    text-decoration: underline solid;
+  }
+
+  b,
+  strong {
+    text-decoration: underline double;
   }
 
   blockquote,
@@ -550,6 +571,22 @@ details[open] summary::marker {
     page-break-inside: avoid;
   }
 
+  h1::before,
+  h2::before,
+  h3::before,
+  h4::before,
+  h5::before,
+  h6::before {
+    content: "";
+  }
+
+  p code,
+  li code {
+    background: none;
+    color: black;
+    display: inline;
+    padding: 0;
+  }
 }
 
 /* ==========================================================================

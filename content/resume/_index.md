@@ -7,25 +7,35 @@ summary = "Resume for Kenneth Love"
 
 # Kenneth Love
 
-<div class="only-print">
-
 **Portland, Oregon, United States**
 
-- <https://thekennethlove.com/resume>
-- <https://github.com/kennethlove>
-- <https://linkedin.com/in/kennethhate>
+<ul>
+  <li class="only-print">https://thekennethlove.com/resume</li>
+  <li><a href="https://github.com/kennethlove" target="new">https://github.com/kennethlove</a></li>
+  <li><a href="https://linkedin.com/in/kennethhate" target="new">https://linkedin.com/in/kennethhate</a></li>
+</ul>
 
-</div>
+<form id="print-options">
+  <fieldset>
+    <legend>Print Options</legend>
+    <input type="radio" id="print-minimal" name="print-options" value="minimal" checked>
+    <label for="print-minimal">Minimal</label>
+    <input type="radio" id="print-full" name="print-options" value="full">
+    <label for="print-full">Full</label>
+  </fieldset>
+</form>
 
 ## Summary
 
 In the past twenty years, Kenneth Love has been known for their Python and
 Django knowledge, sharing that knowledge widely and freely, building
 communities, and contributing to open source. Kenneth's `django-braces` package
-has been used in millions of projects. Kenneth has many years of experience
+has been used in millions of projects. Kenneth also has many years of experience
 explaining technical concepts to learners of all levels and abilities. Between
 their technical knowledge and mentoring abilities, Kenneth can elevate any code
 base and team.
+
+<section id="skills">
 
 ## Skills
 
@@ -36,14 +46,16 @@ base and team.
   <abbr title="Cascading Stylesheets">CSS</abbr>, htmx, and JavaScript as
   required.
 - AI-related tools such as Claude Code, Codex, and several more.
+</section>
+
+<section id="experience">
 
 ## Experience
 
 ### O'Reilly Media
 
-<details open name="oreilly">
-  <summary><b>Principal Engineer</b> &bull; February &ndash; September 2026
-  </summary>
+<details name="oreilly">
+  <summary><b>Principal Engineer</b> &bull; February &ndash; September 2026</summary>
 
 - Developed internal tools to migrate 100+ services' documentation, ease pub/sub
   adoption, and other needs.
@@ -54,8 +66,7 @@ base and team.
 </details>
 
 <details name="oreilly">
-  <summary><b>Engineering Manager</b> &bull; January 2022 &ndash; February 2026
-  </summary>
+  <summary><b>Engineering Manager</b> &bull; January 2022 &ndash; February 2026</summary>
 
 - Lead an engineering team to meet product needs for the search experience. The
   search project was the focus for the entire duration.
@@ -67,8 +78,7 @@ base and team.
 </details>
 
 <details name="oreilly">
-  <summary><b>Senior Software Engineer</b> &bull; August 2021 &ndash; January 2022
-  </summary>
+  <summary><b>Senior Software Engineer</b> &bull; August 2021 &ndash; January 2022</summary>
 
 - Worked on product teams building new features and improving existing ones.
   Projects worked on added new features to the learning platform or facilitated
@@ -77,8 +87,7 @@ base and team.
 </details>
 
 <details name="oreilly">
-  <summary><b>Software Engineer</b> &bull; September 2017 &ndash; August 2021
-  </summary>
+  <summary><b>Software Engineer</b> &bull; September 2017 &ndash; August 2021</summary>
 
 - Contributed to multiple teams including search, customer analytics, and
   others.
@@ -92,8 +101,7 @@ base and team.
 ### Treehouse Island Inc
 
 <details>
-  <summary><b>Python Instructor</b> &bull; April 2014 &ndash; September 2017
-  </summary>
+  <summary><b>Python Instructor</b> &bull; April 2014 &ndash; September 2017</summary>
 
 - Designed, wrote, and presented curriculum to a worldwide audience of students
   at multiple skill levels.
@@ -104,50 +112,58 @@ base and team.
 ### NewCircle
 
 <details>
-  <summary><b>Instructor</b> &bull; January &ndash; March 2014
-  </summary>
+  <summary><b>Instructor</b> &bull; January &ndash; March 2014</summary>
 
 - Led week-long courses for profressional advancement.
 - Taught Python and Django.
 </details>
 
-### Contractor
+### Contract
 
-<details name="contractor">
-  <summary><b>Developer</b> &bull; 2009 &ndash; January 2014
-  </summary>
+<details name="contract">
+  <summary><b>Developer</b> &bull; 2009 &ndash; January 2014</summary>
 
-- Freelance web development for various clients.
+- Freelance Web development for various clients.
 - Created a ridiculously complex CMS for apartment communities.
 - Helped clients migrate to Python and Django solutions.
 </details>
 
-<details name="contractor">
-  <summary><b>Mentoring</b> &bull; 2012 &ndash;
-  </summary>
+<details name="contract">
+  <summary><b>Mentoring</b> &bull; 2012 &ndash; Present</summary>
 
 - Helped mentees understand new concepts such as programming, Python, or Django.
 - Advised mentees on career progression.
 - Provided guidance on starting onboarding programs.
 </details>
 
+<details name="contract">
+  <summary><b>Technical Reviewer</b> &bull; 2013 &ndash; Present</summary>
+
+- <i>Hello Web App</i> (1st edition)
+- <i>Two Scoops of Django</i> (1st edition)
+- <i>Python Crash Course</i> (1st, 2nd, 3rd, 4th editions)
+- <i>Python Beyond the Basics</i> (1st edition)
+</details>
+
 ### Open Source
 
 <details>
-  <summary><b>Open Source Contributor</b> · 2006 &ndash; Present
-  </summary>
+  <summary><b>Open Source Contributor</b> · 2006 &ndash; Present</summary>
 
-- `django-braces`, a popular collection of mixins for Django's
+- [`django-braces`, a popular collection of mixins](https://github.com/brack3t/django-braces) for Django's
   <abbr title="Generic Class-Based Views">GCBV</abbr>.
-- Contributions to `django`, the Beeware project, and others.
-- Released packages to make form handling, admin customization, running
-  management commands remotely, and migrations easier for Django users.
+- Contributions to `django` itself, the Beeware project, and others.
+- Released packages to make [form handling](https://github.com/kennethlove/django-shapeshifter), [admin customization](https://github.com/kennethlove/django-admin-action-hero), [running
+  management commands remotely](https://github.com/kennethlove/django-middle-management), and [migrations](https://github.com/kennethlove/django-drifter) easier for Django users.
 </details>
 
 ### Personal Projects
 
-- A Web-based _Hunger Games_-inspired web app (Rust, HTMX).
-- A Brainf*ck development CLI and TUI (Rust).
+- A [Web-based <i>Hunger Games</i>-inspired app](https://github.com/kennethlove/hangrier_games) (Rust, htmx).
+- A [Brainf*ck development CLI and TUI](https://github.com/kennethlove/rust-bf) (Rust).
+</section>
+
+<section id="speaking">
 
 ## Speaking & Community
 
@@ -163,10 +179,14 @@ base and team.
 ### Organizer
 
 - **DjangoGirls Portland** (2016), three events.
-- **DjangoCon US** (2018)
+- **DjangoCon US** (2016, 2017, 2018)
+</section>
+
+<section id="education">
 
 ## Education
 
 **Associate of Science (A.S.), Multimedia Technology**
 
 Oklahoma State University Institute of Technology-Okmulgee &bull; 2000 &ndash; 2003
+</section>

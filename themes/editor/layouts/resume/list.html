@@ -1,8 +1,14 @@
-{{ define "title" }}
-    Kenneth Love's Resume
-{{ end }}
+{{ define "title" }}Resume from Kenneth Love{{ end }}
 
 {{ define "main" }}
     {{ .Content }}
+    <script>
+      (function () {
+        const webTitle = document.title;
+        const printTitle = "Kenneth Love";
+        addEventListener("beforeprint", () => (document.title = printTitle));
+        addEventListener("afterprint", () => (document.title = webTitle));
+      })();
+    </script>
 {{ end }}
 
