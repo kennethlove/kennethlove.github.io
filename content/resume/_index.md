@@ -7,23 +7,38 @@ summary = "Resume for Kenneth Love"
 
 # Kenneth Love
 
-**Portland, Oregon, United States**
 
-<ul>
-  <li class="only-print">https://thekennethlove.com/resume</li>
-  <li><a href="https://github.com/kennethlove" target="new">https://github.com/kennethlove</a></li>
-  <li><a href="https://linkedin.com/in/kennethhate" target="new">https://linkedin.com/in/kennethhate</a></li>
-</ul>
+<div id="details-and-controls">
 
-<form id="print-options">
-  <fieldset>
-    <legend>Print Options</legend>
-    <input type="radio" id="print-minimal" name="print-options" value="minimal" checked>
-    <label for="print-minimal">Minimal</label>
-    <input type="radio" id="print-full" name="print-options" value="full">
-    <label for="print-full">Full</label>
-  </fieldset>
-</form>
+  <div>
+
+  **Portland, Oregon, United States**
+
+  <ul>
+    <li class="only-print">https://thekennethlove.com/resume</li>
+    <li><a href="https://github.com/kennethlove" target="new">https://github.com/kennethlove</a></li>
+    <li><a href="https://linkedin.com/in/kennethhate" target="new">https://linkedin.com/in/kennethhate</a></li>
+  </ul>
+  </div>
+
+  <form id="print-options">
+    <fieldset>
+      <legend>Print Options</legend>
+      <label title="Minimal items">
+        <input type="radio" id="print-minimal" name="print-options" value="minimal" checked>
+        <span>Minimal</span>
+      </label>
+      <label title="Opened items">
+        <input type="radio" id="print-as-is" name="print-options" value="as-is">
+        <span>As-is</span>
+      </label>
+      <label title="All items">
+        <input type="radio" id="print-full" name="print-options" value="full">
+        <span>Full</span>
+      </label>
+    </fieldset>
+  </form>
+</div>
 
 ## Summary
 
@@ -54,7 +69,7 @@ base and team.
 
 ### O'Reilly Media
 
-<details name="oreilly">
+<details open>
   <summary><b>Principal Engineer</b> &bull; February &ndash; September 2026</summary>
 
 - Developed internal tools to migrate 100+ services' documentation, ease pub/sub
@@ -65,7 +80,7 @@ base and team.
   of larger systems.
 </details>
 
-<details name="oreilly">
+<details>
   <summary><b>Engineering Manager</b> &bull; January 2022 &ndash; February 2026</summary>
 
 - Lead an engineering team to meet product needs for the search experience. The
@@ -77,7 +92,7 @@ base and team.
 - Investigated AI tools and both led and encouraged engineers to do the same.
 </details>
 
-<details name="oreilly">
+<details>
   <summary><b>Senior Software Engineer</b> &bull; August 2021 &ndash; January 2022</summary>
 
 - Worked on product teams building new features and improving existing ones.
@@ -86,7 +101,7 @@ base and team.
 - Continued to refine and administer the onboarding program.
 </details>
 
-<details name="oreilly">
+<details>
   <summary><b>Software Engineer</b> &bull; September 2017 &ndash; August 2021</summary>
 
 - Contributed to multiple teams including search, customer analytics, and
@@ -120,7 +135,7 @@ base and team.
 
 ### Contract
 
-<details name="contract">
+<details>
   <summary><b>Developer</b> &bull; 2009 &ndash; January 2014</summary>
 
 - Freelance Web development for various clients.
@@ -128,7 +143,7 @@ base and team.
 - Helped clients migrate to Python and Django solutions.
 </details>
 
-<details name="contract">
+<details>
   <summary><b>Mentoring</b> &bull; 2012 &ndash; Present</summary>
 
 - Helped mentees understand new concepts such as programming, Python, or Django.
@@ -136,7 +151,7 @@ base and team.
 - Provided guidance on starting onboarding programs.
 </details>
 
-<details name="contract">
+<details>
   <summary><b>Technical Reviewer</b> &bull; 2013 &ndash; Present</summary>
 
 - <i>Hello Web App</i> (1st edition)

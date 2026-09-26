@@ -458,7 +458,8 @@ footer {
 }
 
 details summary::marker {
-  content: "[+] ";
+  /* plus */
+  content: "[\002B]\A0";
 }
 
 details summary:hover::marker {
@@ -467,7 +468,73 @@ details summary:hover::marker {
 }
 
 details[open] summary::marker {
-  content: "[-] ";
+  /* minus */
+  content: "[\2212]\A0";
+}
+
+#details-and-controls {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: normal;
+
+  #print-options {
+    margin-top: 0;
+    justify-self: self-end;
+
+    legend {
+      color: var(--ff-pink);
+    }
+
+    fieldset {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      text-align: left;
+    }
+
+    label {
+      position: relative;
+      display: inline-block;
+      margin: 5px 0 0 0;
+    }
+
+    label:hover {
+      color: var(--ff-yellow);
+    }
+
+    input {
+      opacity: 0;
+      position: absolute;
+    }
+
+    span {
+      position: relative;
+      display: inline-block;
+      padding-left: 40px;
+    }
+
+    span::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      border-bottom: 1px dashed;
+      width: 30px;
+    }
+
+    input:focus~span::before {
+      border-bottom: 1px solid;
+    }
+
+    input:checked~span::after {
+      content: "\2713";
+      color: #fff;
+      position: absolute;
+      font-size: 12px;
+      left: 12px;
+      top: 1px;
+    }
+  }
 }
 
 /* ==========================================================================
@@ -479,10 +546,16 @@ details[open] summary::marker {
     display: none;
   }
 
+  html:has(#print-minimal:checked) {
+    #experience details:first-of-type::details-content {
+      content-visibility: visible !important;
+    }
+  }
+
   html:has(#print-full:checked) {
 
     /* Reveal closed <details> content */
-    details:not([open])>*:not(summary) {
+    details>*:not(summary) {
       display: block;
     }
 
