@@ -572,6 +572,11 @@ details[open] summary::marker {
     content: "";
   }
 
+  details {
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+  }
+
   .no-print {
     display: none;
   }
@@ -590,10 +595,12 @@ details[open] summary::marker {
     background: white;
     color: black;
     font-size: 0.75rem;
+    max-width: 100%;
   }
 
   body {
     max-width: 100%;
+    padding-top: 1rem;
   }
 
   em,
@@ -604,6 +611,7 @@ details[open] summary::marker {
 
   b,
   strong {
+    color: black;
     text-decoration: underline double;
   }
 
@@ -614,26 +622,11 @@ details[open] summary::marker {
     max-width: 100%;
   }
 
-  a {
-    color: inherit;
+  a,
+  a:visited,
+  a:active {
+    color: black;
     border-bottom: none;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    page-break-after: avoid;
-  }
-
-  h1 {
-    font-size: 2rem;
-  }
-
-  h2 {
-    font-size: 1.5rem;
   }
 
   details,
@@ -642,6 +635,28 @@ details[open] summary::marker {
   ul,
   ol {
     page-break-inside: avoid;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0 0 1rem 0;
+    page-break-after: avoid;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: 0.125ch;
+    text-decoration: none;
   }
 
   h1::before,
@@ -653,12 +668,34 @@ details[open] summary::marker {
     content: "";
   }
 
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+    padding-top: 1rem;
+  }
+
+  section {
+    margin-top: 2rem;
+  }
+
   p code,
   li code {
     background: none;
     color: black;
     display: inline;
     padding: 0;
+  }
+
+  .main {
+    padding-right: 1rem;
+    max-width: 108ch;
   }
 }
 

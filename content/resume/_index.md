@@ -163,7 +163,7 @@ base and team.
 ### Open Source
 
 <details>
-  <summary><b>Open Source Contributor</b> · 2006 &ndash; Present</summary>
+  <summary><b>Open Source Contributor</b> &bull; 2006 &ndash; Present</summary>
 
 - [`django-braces`, a popular collection of mixins](https://github.com/brack3t/django-braces) for Django's
   <abbr title="Generic Class-Based Views">GCBV</abbr>.
@@ -171,18 +171,14 @@ base and team.
 - Released packages to make [form handling](https://github.com/kennethlove/django-shapeshifter), [admin customization](https://github.com/kennethlove/django-admin-action-hero), [running
   management commands remotely](https://github.com/kennethlove/django-middle-management), and [migrations](https://github.com/kennethlove/django-drifter) easier for Django users.
 </details>
-
-### Personal Projects
-
-- A [Web-based <i>Hunger Games</i>-inspired app](https://github.com/kennethlove/hangrier_games) (Rust, htmx).
-- A [Brainf*ck development CLI and TUI](https://github.com/kennethlove/rust-bf) (Rust).
 </section>
 
 <section id="speaking">
 
-## Speaking & Community
+## Community
 
-### Conference Speaker
+<details>
+<summary><b>Conference Speaker</b> &bull; 2012 &ndash; 2024</summary>
 
 - **Cascadia PHP** (2024) - "Growing Your Engineering Garden"
 - **PyCascades** (2018) - "Those Who Care, Teach!"
@@ -190,11 +186,14 @@ base and team.
 - **PyCon US** (2013, 2014) - Django tutorials
 - **DjangoCon US** (2012) - "Views Can Be Classy"
 - Other conferences and events.
+</details>
 
-### Organizer
+<details>
+<summary><b>Organizer</b> &bull; 2016 &ndash; 2018</summary>
 
 - **DjangoGirls Portland** (2016), three events.
 - **DjangoCon US** (2016, 2017, 2018)
+</details>
 </section>
 
 <section id="education">
