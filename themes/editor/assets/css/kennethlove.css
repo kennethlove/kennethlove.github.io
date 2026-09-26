@@ -603,8 +603,8 @@ details[open] summary::marker {
     padding-top: 1rem;
   }
 
-  em,
-  strong {
+  i,
+  em {
     color: black;
     text-decoration: underline solid;
   }
