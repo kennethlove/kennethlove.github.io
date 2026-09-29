@@ -1,12 +1,14 @@
+@import url("https://cdn.jsdelivr.net/npm/@fontsource/maple-mono@5.3.0/index.css");
+
 /* ==========================================================================
    Reset
    ========================================================================== */
 
 * {
   border: 0 none;
-  font-weight: inherit;
-  font-family: inherit;
-  font-style: inherit;
+  font-weight: 400;
+  font-family: "Maple Mono", monospace;
+  font-style: normal;
   font-size: 100%;
   margin: 0;
   outline: 0;
@@ -21,9 +23,6 @@
 html {
   background-color: var(--ff-purple);
   color: var(--ff-white);
-  font-family: "Hack", "Fantasque Sans Mono", monospace;
-  font-style: normal;
-  font-weight: normal;
 }
 
 html,
@@ -96,6 +95,10 @@ h6::before {
   content: "###### ";
 }
 
+h2+h3 {
+  margin-top: 0;
+}
+
 blockquote,
 p,
 table {
@@ -138,15 +141,15 @@ a:visited {
   color: var(--ff-mint);
   font-style: normal;
   font-weight: 400;
+  padding: 0.1ch 0.2ch;
   text-decoration: none;
 }
 
 a:hover,
 a:focus {
+  background-color: var(--ff-yellow);
   border-bottom-style: solid;
-  color: var(--ff-yellow);
-  outline: 1px solid;
-  outline-offset: 0.25em;
+  color: var(--ff-purple);
 }
 
 em {
@@ -203,6 +206,18 @@ p code {
 
 abbr {
   cursor: help;
+  font-variant: small-caps;
+}
+
+dl {
+  display: grid;
+  grid-template-columns: min-content max-content;
+  line-height: 1.75;
+  margin-top: 0;
+}
+
+time {
+  font-weight: bold;
 }
 
 /* ==========================================================================
@@ -696,6 +711,11 @@ details[open] summary::marker {
   .main {
     padding-right: 1rem;
     max-width: 108ch;
+  }
+
+  abbr {
+    color: black;
+    text-decoration: none;
   }
 }
 
