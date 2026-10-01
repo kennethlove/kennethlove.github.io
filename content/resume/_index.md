@@ -5,16 +5,16 @@ draft = false
 summary = "Resume for Kenneth Love"
 +++
 
-# Kenneth Love
+<h1 class="only-print">Kenneth Love</h1>
 
 <section id="details-and-controls">
   <dl>
     <dt>Location</dt>
     <dd><b>Portland, Oregon, United States</b></dd>
-    <dt>Email</dt>
-    <dd><a href="mailto:resume-spam@thekennethlove.com?subject=EMAIL ADDRESS NEEDS EDITING&body=Please remove -spam from the email address." rel="author me">resume<span style="display:none">-spam</span>@thekennethlove.com</a></dd>
-    <dt>Phone</dt>
-    <dd><a href="tel:+17024200815" rel="author me">+1 702-420-0815</a></dd>
+    <dt class="only-print">Email</dt>
+    <dd class="only-print"><a href="mailto:resume-spam@thekennethlove.com?subject=EMAIL ADDRESS NEEDS EDITING&body=Please remove -spam from the email address." rel="author me">resume<span style="display:none">-spam</span>@thekennethlove.com</a></dd>
+    <dt class="only-print">Phone</dt>
+    <dd class="only-print"><a href="tel:+17024200815" rel="author me">+1 702-420-0815</a></dd>
     <dt class="only-print">Resume</dt>
     <dd class="only-print">https://thekennethlove.com/resume</dd>
     <dt>GitHub</dt>

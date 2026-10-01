@@ -31,6 +31,11 @@ body {
   width: 100%;
 }
 
+body {
+  display: flex;
+  justify-content: center;
+}
+
 /* ==========================================================================
    Typography
    ========================================================================== */
@@ -227,88 +232,42 @@ time {
 .container {
   display: grid;
   gap: 1rem;
-  margin: 0 1rem;
-  padding-bottom: 1rem;
+  max-width: 80ch;
 }
 
 .main {
-  padding-right: 1rem;
-  max-width: 72ch;
+  padding-right: 1ch;
 }
 
 @media screen and (max-width: 960px) {
   .container {
     grid-template-columns: 1fr;
-  }
-
-  .side {
-    grid-row-start: 1;
-    grid-row-end: 2;
-  }
-
-  .main {
-    grid-row-start: 2;
-    grid-row-end: 3;
-    grid-column-start: 1;
-    grid-column-end: 2;
+    grid-template-rows: min-content auto min-content;
   }
 }
 
 @media all and (min-width: 960px) {
   .container {
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: auto min-content;
-  }
-
-  .side {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    padding-left: 1rem;
-  }
-
-  .main {
-    grid-column-start: 3;
-    grid-column-end: 8;
-  }
-
-  footer {
-    grid-column-start: 1;
-    grid-row-start: 2;
-    grid-column: span 8;
-    padding-left: 1rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content auto min-content;
   }
 }
 
 @media screen and (min-width: 1100px) {
   .container {
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: minmax(16ch, 24ch) minmax(72ch, 80ch);
+    max-width: 96ch;
   }
 
-  .side {
+  footer {
     grid-column-start: 1;
-    grid-column-end: 2;
-    padding-left: 1rem;
-  }
-
-  .main {
-    grid-column-start: 2;
     grid-column-end: 3;
   }
 }
 
 @media screen and (min-width: 1400px) {
   .container {
-    grid-template-columns: repeat(6, 1fr);
-  }
-
-  .side {
-    grid-column-start: 2;
-    grid-column-end: 3;
-  }
-
-  .main {
-    grid-column-start: 3;
-    grid-column-end: 6;
+    max-width: 110ch;
   }
 }
 
@@ -337,34 +296,37 @@ time {
 }
 
 .side .nav ul li {
-  line-height: 1.2;
-  margin: 0 0 1em;
+  line-height: 1.75;
+  margin-left: 0;
 }
 
-.side .post-nav ul {
-  margin-top: -0.6em;
+.side .post-nav {
+  margin-top: 0.5ch;
 }
 
 .side .post-nav ul li {
   color: var(--ff-mint);
-  margin-bottom: 0.3em;
-  margin-left: 0.5em;
+  line-height: 1.5;
+  position: relative;
+  padding-left: calc(2ch + 0.25rem);
 }
 
 .side .post-nav ul li::before {
   content: "\251C\2500";
+  font-size: 1.1rem;
+  position: absolute;
+  left: 0;
 }
 
 .side .post-nav ul li:last-child::before {
   content: "\2514\2500";
 }
 
-.side .post-nav a {
-  margin-left: 0.5em;
+.side .post-nav ul li a {
   text-decoration: none;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1100px) {
   .side .post-nav {
     display: none;
   }
@@ -375,9 +337,13 @@ time {
     align-content: left;
     justify-content: space-between;
   }
+}
 
-  .side .nav ul li {
-    margin: 0;
+@media screen and (min-width: 1100px) {
+
+  .side .post-nav,
+  .side .nav ul {
+    display: block;
   }
 }
 
@@ -493,8 +459,13 @@ details[open] summary::marker {
 
 #details-and-controls {
   display: grid;
+  column-gap: 2ch;
   grid-template-columns: auto auto;
   align-items: normal;
+
+  @media screen and (min-width: 1000px) {
+    margin-top: 1.75em;
+  }
 
   #print-options {
     margin-top: 0;
