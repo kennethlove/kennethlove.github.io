@@ -355,6 +355,10 @@ time {
   content: "\251C\2500";
 }
 
+.side .post-nav ul li:last-child::before {
+  content: "\2514\2500";
+}
+
 .side .post-nav a {
   margin-left: 0.5em;
   text-decoration: none;
