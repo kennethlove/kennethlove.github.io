@@ -7,7 +7,6 @@ summary = "Resume for Kenneth Love"
 
 # Kenneth Love
 
-
 <section id="details-and-controls">
   <dl>
     <dt>Location</dt>
@@ -45,13 +44,15 @@ summary = "Resume for Kenneth Love"
 
 <section id="summary">
 
-In the past twenty years, Kenneth Love has been known for their Python and
-Django knowledge, sharing that knowledge widely and freely, building
-communities, and contributing to open source. Kenneth's `django-braces` package
-has been used in thousands of projects. Kenneth has many years of experience
-explaining technical concepts to learners of all levels and abilities. Between
-their technical knowledge and mentoring abilities, Kenneth can improve any code
-base and elevate any team.
+## Summary
+
+Principal Engineer with 20+ years of experience brings knowledge, practices, and
+mentoring, seeks position with low drama, interesting problems, and a positive
+impact on the world. Successfully led and advised multiple teams delivering real
+solutions to complex problems. Created, administered, and refined a department-wide
+onboarding program, introducing 50% of new engineers to a large codebase.
+Authored and maintains `django-braces`, a Django library with millions of
+installs in an untold multitude of projects.
 
 </section>
 
@@ -82,7 +83,8 @@ base and elevate any team.
 - Contributed to and maintained a custom framework used by 100+ services.
 - Aided engineers on 15+ teams throughout the engineering department.
 - Used AI-related tools for development assistance, research, and as a component
-  of larger systems to support engineers and teams across the department.
+  of larger systems to support all engineers and teams across the department.
+- Onboarded new hires as they arrived.
 </details>
 
 <details>
@@ -90,35 +92,47 @@ base and elevate any team.
 
 - Lead an engineering team of four to meet product needs for the search
   experience. The search project was the focus for the entire duration.
-- Collaborated with project and product managers, third-party providers, and
-  other engineering teams to achieve company goals.
+- Collaborated with multiple project and product managers, third-party
+  providers, and other engineering teams to achieve company goals.
 - Wrote tickets, helped plan sprints, and handled other needs as they arose to
-  ensure the team met their goals.
-- Worked to promote multiple engineers both in title and to better team fits. 
-- Investigated AI tools and both led and encouraged engineers to do the same, as
-  requested by the company.
+  ensure the team met their goals. Most sprints were correctly sized, leading to
+  quicker accomplishment of priorities.
+- Worked to promote all engineers on the team both in title and to better team
+  fits. Resulted in two promotions and a terrific team move.
+- Investigated and tested AI tools and reported findings, to help set AI usage
+  expectations and practices in the department.
+- Continued to onboard new engineers to the department.
+- Provided one-on-one coaching to engineers through the department's mentoring
+  program, advising 10+ engineers.
 </details>
 
 <details>
   <summary><b>Senior Software Engineer</b> &bull; <time datetime="2021-08">August 2021</time> &ndash; <time datetime="2022-01">January 2022</time></summary>
 
-- Worked on product teams building new features and improving existing ones.
-  Projects worked on added new features to the learning platform or facilitated
-  future features.
-- Continued to refine and administer the onboarding program, onboarding the vast
-  majority of new hires.
+- Worked on multiple product teams building new features and improving existing
+  ones. Responsibilities ranged from planning and implementing new
+  microservices, finding and fixing bugs, and preparing the platform for
+  upcoming features.
+- Onboarded several more engineers through my program. The program also evolved
+  with every new hire.
+- Participated in the department's mentoring program, coaching multiple
+  engineers across a variety of topics.
 </details>
 
 <details>
   <summary><b>Software Engineer</b> &bull; <time datetime="2017-09">September 2017</time> &ndash; <time datetime="2021-08">August 2021</time></summary>
 
-- Contributed to multiple engineering teams including search, customer
-  analytics, and others.
-- Advanced an internal framework to make development and deployment simpler. The
-  framework has been used for almost all projects since then.
-- Created, organized, and ran an onboarding program used for 40+ new engineers.
+- Contributed to projects on multiple engineering teams including search,
+  customer analytics, and others.
+- Advanced an internal framework to make development and deployment simpler and
+  quicker. The framework has been used continually for almost all projects since 
+  then, supporting 100+ microservices and frontends.
+- Created, organized, and ran an onboarding program used for all new engineers.
   This program centralized and standardized orientation and also saved the
   company from having to pay for travel for new hires and their mentors.
+- Helped define a departmental mentoring program, participated in the program
+  most quarters, and became an active working group member for program
+  management.
 </details>
 
 ### Treehouse Island Inc
@@ -128,9 +142,7 @@ base and elevate any team.
 
 - Designed, wrote, and presented 20+ curricula to teach Python, Flask, Django,
   HTTP, and related technologies.
-- Supported students worldwide at all experience levels.
-- Designed and created an online certificate program for demonstrating
-  proficiency in Python.
+- Supported thousands of students worldwide at all experience levels.
 </details>
 
 ### NewCircle
@@ -138,19 +150,20 @@ base and elevate any team.
 <details>
   <summary><b>Instructor</b> &bull; <time datetime="2014-01">January</time> &ndash; <time datetime="2014-04">March 2014</time></summary>
 
-- Led week-long courses for professional advancement.
 - Taught Python and Django to various companies and groups of professionals.
 </details>
 
-### Contract
+### Freelance
 
 <details>
   <summary><b>Developer</b> &bull; <time datetime="2009">2009</time> &ndash; <time datetime="2014-01">January 2014</time></summary>
 
-- Freelance Web application development for various clients.
-- Created a ridiculously complex CMS for apartment communities and internal
-  designers, using Nginx, Redis, MongoDB, Lua, Python, and JavaScript.
+- Developed various Web applications for clients, usually in Python and Django.
+- Created a ridiculously complex CMS for dozens of apartment communities and
+  internal designers, using Nginx, Redis, MongoDB, Lua, Python, and JavaScript.
 - Helped multiple clients migrate to Python and Django from custom PHP projects.
+  This opened them up to support and information from all over, not just myself
+  or internal teams.
 </details>
 
 <details>
@@ -158,8 +171,8 @@ base and elevate any team.
 
 - Helped mentees understand new concepts such as programming, Python, or Django
   resulting in improved skills and job prospects.
-- Advised multiple mentees on career progression and new skills.
-- Provided guidance on starting effective, kind onboarding programs.
+- Advised mentees on their career progression and new skills to learn.
+- Provided guidance on effective, thorough, and kind onboarding practices.
 </details>
 
 <details>
@@ -188,7 +201,7 @@ base and elevate any team.
 
 <section id="speaking">
 
-## Community
+## Community Achievements
 
 <details>
 <summary><b>Conference Speaker</b> &bull; <time datetime="2012">2012</time> &ndash; <time datetime="2024">2024</summary>
@@ -209,6 +222,14 @@ base and elevate any team.
   <time datetime="2017">2017</time>,
   <time datetime="2018">2018</time>)
 </details>
+
+<details>
+<summary><b>Member</b></summary>
+
+- **Django Software Foundation Board Member** (<time datetime="2017">2017</time>)
+- **Django Software Foundation Individual Member** (<time datetime="2018">2018</time>)
+- **Python Software Foundation Fellow** (<time datetime="2020">2020</time>)
+
 </section>
 
 <section id="education">
