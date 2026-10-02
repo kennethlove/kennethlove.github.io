@@ -6,10 +6,10 @@
 
 * {
   border: 0 none;
-  font-weight: 400;
   font-family: "Maple Mono", monospace;
-  font-style: normal;
   font-size: 100%;
+  font-style: normal;
+  font-weight: 400;
   margin: 0;
   outline: 0;
   padding: 0;
@@ -100,7 +100,7 @@ h6::before {
   content: "###### ";
 }
 
-h2+h3 {
+h2 + h3 {
   margin-top: 0;
 }
 
@@ -118,8 +118,8 @@ li {
 
 figure {
   background-color: var(--ff-violet);
-  padding: 1rem;
   margin-bottom: 1rem;
+  padding: 1rem;
 }
 
 figure blockquote {
@@ -129,8 +129,8 @@ figure blockquote {
 }
 
 figcaption {
-  display: block;
   color: var(--ff-yellow);
+  display: block;
 }
 
 figcaption code {
@@ -179,9 +179,9 @@ table {
 
 table th {
   border-bottom: 2px solid var(--ff-lightyellow);
-  padding-bottom: 0.5rem;
   font-weight: bold;
   letter-spacing: 0.1rem;
+  padding-bottom: 0.5rem;
 }
 
 table td {
@@ -205,7 +205,6 @@ p code {
   background: var(--ff-violet);
   color: #f6d3ff;
   display: inline-block;
-  padding: 0.125rem 0.3rem;
   padding: 0.25ch 0.5ch;
 }
 
@@ -239,33 +238,26 @@ time {
   padding-right: 1ch;
 }
 
-@media screen and (max-width: 960px) {
+/* Single column on screen at every width, and in any media type at >= 960px. */
+@media screen, (width >= 960px) {
   .container {
     grid-template-columns: 1fr;
     grid-template-rows: min-content auto min-content;
   }
 }
 
-@media all and (min-width: 960px) {
-  .container {
-    grid-template-columns: 1fr;
-    grid-template-rows: min-content auto min-content;
-  }
-}
-
-@media screen and (min-width: 1100px) {
+@media screen and (width >= 1100px) {
   .container {
     grid-template-columns: minmax(16ch, 24ch) minmax(72ch, 80ch);
     max-width: 96ch;
   }
 
   footer {
-    grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column: 1 / 3;
   }
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (width >= 1400px) {
   .container {
     max-width: 110ch;
   }
@@ -280,8 +272,8 @@ time {
 }
 
 #name a {
-  color: inherit;
   border-bottom: 0;
+  color: inherit;
   font-weight: bold;
 }
 
@@ -307,15 +299,15 @@ time {
 .side .post-nav ul li {
   color: var(--ff-mint);
   line-height: 1.5;
-  position: relative;
   padding-left: calc(2ch + 0.25rem);
+  position: relative;
 }
 
 .side .post-nav ul li::before {
   content: "\251C\2500";
   font-size: 1.1rem;
-  position: absolute;
   left: 0;
+  position: absolute;
 }
 
 .side .post-nav ul li:last-child::before {
@@ -326,7 +318,7 @@ time {
   text-decoration: none;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (width <= 1100px) {
   .side .post-nav {
     display: none;
   }
@@ -334,13 +326,11 @@ time {
   .side .nav ul {
     display: flex;
     flex-flow: row wrap;
-    align-content: left;
     justify-content: space-between;
   }
 }
 
-@media screen and (min-width: 1100px) {
-
+@media screen and (width >= 1100px) {
   .side .post-nav,
   .side .nav ul {
     display: block;
@@ -434,8 +424,7 @@ footer {
 .inline-list {
   display: flex;
   flex-flow: row wrap;
-  align-content: center;
-  justify-content: space-between;
+  place-content: center space-between;
 }
 
 .inline-list li {
@@ -458,34 +447,34 @@ details[open] summary::marker {
 }
 
 #details-and-controls {
-  display: grid;
-  column-gap: 2ch;
-  grid-template-columns: auto auto;
   align-items: normal;
+  column-gap: 2ch;
+  display: grid;
+  grid-template-columns: auto auto;
 
-  @media screen and (min-width: 1000px) {
+  @media screen and (width >= 1000px) {
     margin-top: 1.75em;
   }
 
   #print-options {
-    margin-top: 0;
     justify-self: self-end;
+    margin-top: 0;
 
     legend {
       color: var(--ff-pink);
     }
 
     fieldset {
+      align-items: flex-start;
       display: flex;
       flex-direction: column;
-      align-items: flex-start;
       text-align: left;
     }
 
     label {
-      position: relative;
       display: inline-block;
-      margin: 5px 0 0 0;
+      margin: 5px 0 0;
+      position: relative;
     }
 
     label:hover {
@@ -498,30 +487,30 @@ details[open] summary::marker {
     }
 
     span {
-      position: relative;
       display: inline-block;
       padding-left: 40px;
+      position: relative;
     }
 
     span::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      bottom: 0;
       border-bottom: 1px dashed;
+      bottom: 0;
+      content: "";
+      left: 0;
+      position: absolute;
       width: 30px;
     }
 
-    input:focus~span::before {
+    input:focus ~ span::before {
       border-bottom: 1px solid;
     }
 
-    input:checked~span::after {
-      content: "\2713";
+    input:checked ~ span::after {
       color: #fff;
-      position: absolute;
+      content: "\2713";
       font-size: 12px;
       left: 12px;
+      position: absolute;
       top: 1px;
     }
   }
@@ -543,9 +532,8 @@ details[open] summary::marker {
   }
 
   html:has(#print-full:checked) {
-
     /* Reveal closed <details> content */
-    details>*:not(summary) {
+    details > *:not(summary) {
       display: block;
     }
 
@@ -578,7 +566,9 @@ details[open] summary::marker {
   .main {
     grid-column: unset;
     grid-row: unset;
+    max-width: 108ch;
     padding: 0;
+    padding-right: 1rem;
   }
 
   html {
@@ -615,8 +605,8 @@ details[open] summary::marker {
   a,
   a:visited,
   a:active {
-    color: black;
     border-bottom: none;
+    color: black;
   }
 
   details,
@@ -624,7 +614,7 @@ details[open] summary::marker {
   blockquote,
   ul,
   ol {
-    page-break-inside: avoid;
+    break-inside: avoid;
   }
 
   h1,
@@ -633,19 +623,11 @@ details[open] summary::marker {
   h4,
   h5,
   h6 {
-    margin: 0 0 1rem 0;
-    page-break-after: avoid;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
+    break-after: avoid;
     font-style: normal;
     font-weight: bold;
     letter-spacing: 0.125ch;
+    margin: 0 0 1rem;
     text-decoration: none;
   }
 
@@ -681,11 +663,6 @@ details[open] summary::marker {
     color: black;
     display: inline;
     padding: 0;
-  }
-
-  .main {
-    padding-right: 1rem;
-    max-width: 108ch;
   }
 
   abbr {
