@@ -13,8 +13,6 @@ summary = "Resume for Kenneth Love"
     <dd><b>Portland, Oregon, United States</b></dd>
     <dt class="only-print">Email</dt>
     <dd class="only-print"><a href="mailto:resume-spam@thekennethlove.com?subject=EMAIL ADDRESS NEEDS EDITING&body=Please remove -spam from the email address." rel="author me">resume<span style="display:none">-spam</span>@thekennethlove.com</a></dd>
-    <dt class="only-print">Phone</dt>
-    <dd class="only-print"><a href="tel:+17024200815" rel="author me">+1 702-420-0815</a></dd>
     <dt class="only-print">Resume</dt>
     <dd class="only-print">https://thekennethlove.com/resume</dd>
     <dt>GitHub</dt>
