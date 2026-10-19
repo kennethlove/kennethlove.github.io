@@ -2,10 +2,11 @@
 title = "Kenneth Love's Resume"
 date = 2017-05-16
 draft = false
-summary = "Resume for Kenneth Love"
+summary = "Resume"
 +++
 
-<h1 class="only-print">Kenneth Love</h1>
+<h1 class="only-print" id="title">Resume</h1>
+<h2 class="only-print">Kenneth Love</h2>
 
 <section id="details-and-controls">
   <dl>
@@ -37,6 +38,7 @@ summary = "Resume for Kenneth Love"
         <span>Full</span>
       </label>
     </fieldset>
+    <label><input name="resume-title" id="resume-title" placeholder="Resume" type="text"></label>
   </form>
 </section>
 

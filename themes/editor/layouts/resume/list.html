@@ -3,12 +3,16 @@
 {{ define "main" }}
     {{ .Content }}
     <script>
-      (function () {
-        const webTitle = document.title;
-        const printTitle = "Kenneth Love";
-        addEventListener("beforeprint", () => (document.title = printTitle));
-        addEventListener("afterprint", () => (document.title = webTitle));
-      })();
+      const original = document.title;
+      console.log(original);
+      document.querySelector("#resume-title").addEventListener("change", (e) => {
+        const title = e.target.value;
+        if (title !== "") {
+          document.querySelector("#title").innerHTML = document.title = e.target.value;
+        } else {
+          document.querySelector("#title").innerHTML = document.title = original;
+        }
+      });
     </script>
 {{ end }}
 
