@@ -12,8 +12,8 @@ summary = "Resume"
   <dl>
     <dt>Location</dt>
     <dd><b>Portland, Oregon, United States</b></dd>
-    <dt class="only-print">Email</dt>
-    <dd class="only-print"><a href="mailto:resume-spam@thekennethlove.com?subject=EMAIL ADDRESS NEEDS EDITING&body=Please remove -spam from the email address." rel="author me">resume<span style="display:none">-spam</span>@thekennethlove.com</a></dd>
+    <dt>Email</dt>
+    <dd><a href="mailto:resume-spam@thekennethlove.com?subject=EMAIL ADDRESS NEEDS EDITING&body=Please remove -spam from the email address." rel="author me">resume<span style="display:none">-spam</span>@thekennethlove.com</a></dd>
     <dt class="only-print">Resume</dt>
     <dd class="only-print">https://thekennethlove.com/resume</dd>
     <dt>GitHub</dt>
@@ -52,7 +52,8 @@ impact on the world. Successfully led and advised multiple teams delivering real
 solutions to complex problems. Created, administered, and refined a department-wide
 onboarding program, introducing 50% of new engineers to a large codebase.
 Authored and maintains `django-braces`, a Django library with millions of
-installs in an untold multitude of projects.
+installs in an untold multitude of projects. Open to principal and staff
+individual contributor roles.
 
 </section>
 
@@ -90,7 +91,7 @@ installs in an untold multitude of projects.
 <details>
   <summary><b>Engineering Manager</b> &bull; <time datetime="2022-01">January 2022</time> &ndash; <time datetime="2026-02">February 2026</time></summary>
 
-- Lead an engineering team of four to meet product needs for the search
+- Led an engineering team of four to meet product needs for the search
   experience. The search project was the focus for the entire duration.
 - Collaborated with multiple project and product managers, third-party
   providers, and other engineering teams to achieve company goals.
@@ -209,7 +210,7 @@ installs in an untold multitude of projects.
 - **Cascadia PHP** (<time datetime="2024">2024</time>) - "Growing Your Engineering Garden"
 - **PyCascades** (<time datetime="2018">2018</time>) - "Those Who Care, Teach!"
 - **PyOhio** (<time datetime="2018">2018</time>) - "Those Who Care, Teach!"
-- **PyCon US** (<time datetime="2013">2013</time>, <time datetime="">2014</time>) - Django tutorials
+- **PyCon US** (<time datetime="2013">2013</time>, <time datetime="2014">2014</time>) - Django tutorials
 - **DjangoCon US** (<time datetime="2012">2012</time>) - "Views Can Be Classy"
 - Other conferences and events
 </details>
@@ -230,6 +231,7 @@ installs in an untold multitude of projects.
 - **Django Software Foundation Individual Member** (<time datetime="2018">2018</time>)
 - **Python Software Foundation Fellow** (<time datetime="2020">2020</time>)
 
+</details>
 </section>
 
 <section id="education">
@@ -238,5 +240,5 @@ installs in an untold multitude of projects.
 
 **Associate of Science (A.S.), Multimedia Technology**
 
-Oklahoma State University Institute of Technology-Okmulgee &bull; <time datetime="2000">2000</time> &ndash; <time datetime="2003">2003</time></time>
+Oklahoma State University Institute of Technology-Okmulgee &bull; <time datetime="2000">2000</time> &ndash; <time datetime="2003">2003</time>
 </section>
