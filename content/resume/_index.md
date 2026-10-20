@@ -61,13 +61,19 @@ individual contributor roles.
 
 ## Skills
 
-- Mentorship and training.
-- Software architecture and design.
-- Python, Django, and Rust.
-- <abbr title="HyperText Markup Language">HTML</abbr>,
-  <abbr title="Cascading Stylesheets">CSS</abbr>, htmx, and JavaScript as
-  required.
-- AI-related tools such as Claude Code, Codex, and several more.
+- Python, Django, Flask, Django REST Framework, pytest; SQL, PostgreSQL,
+  MongoDB, Redis, SurrealDB.
+- CI/CD with Jenkins and GitHub Actions, Docker, Linux, Agile/Scrum.
+- Rust, JavaScript, <abbr title="HyperText Markup Language">HTML</abbr>,
+  <abbr title="Cascading Stylesheets">CSS</abbr>, htmx, Lua, shell
+  scripting.
+- Distributed systems, microservices architecture, API design, pub/sub
+  messaging, search systems, and custom internal frameworks (100+
+  services).
+- AI tools and practices: Claude Code, Codex, Pi, Herdr, agentic
+  workflows, and departmental AI-adoption guidance.
+- Mentorship, onboarding-program design, curriculum development, and
+  conference speaking.
 </section>
 
 <section id="experience">
