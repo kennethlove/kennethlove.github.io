@@ -549,6 +549,10 @@ details[open] summary::marker {
   }
 }
 
+.time-wrap::before {
+  content: " • ";
+}
+
 @media screen and (width < 700px) {
   #details-and-controls {
     grid-template-columns: 1fr;
@@ -557,6 +561,27 @@ details[open] summary::marker {
   #details-and-controls #print-options {
     display: none;
   }
+
+  details li {
+    margin-left: 4ch;
+  }
+
+  summary {
+    line-height: 1.5;
+  }
+
+  .time-wrap {
+    display: block;
+  }
+
+  .time-wrap::before {
+    content: "";
+  }
+
+  summary .time-wrap::before {
+    padding-left: 4ch;
+  }
+
 }
 
 /* ==========================================================================
