@@ -1,6 +1,10 @@
 [build]
-command = "hugo --gc --minify"
+command = "./scripts/fetch-private.sh && hugo --gc --minify"
 publish = "public"
 
 [build.environment]
 HUGO_VERSION = "0.166.0"
+
+[[edge_functions]]
+function = "private-pages"
+path     = "/resume"

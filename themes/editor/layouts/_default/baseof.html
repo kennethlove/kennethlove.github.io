@@ -12,12 +12,8 @@
   {{ $chroma := resources.Get "css/chroma.css" }}
   {{ $main := resources.Get "css/kennethlove.css" }}
   {{ $css := slice $colors $chroma $main | resources.Concat "css/style.css" }}
-  {{ if hugo.IsProduction }}
   {{ with $css | minify | fingerprint }}
   <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous" />
-  {{ end }}
-  {{ else }}
-  <link rel="stylesheet" href="{{ $css.RelPermalink }}" />
   {{ end }}
   {{ with .OutputFormats.Get "rss" }}
   {{ printf `
