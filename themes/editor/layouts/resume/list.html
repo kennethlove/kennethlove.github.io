@@ -4,7 +4,6 @@
     {{ .Content }}
     <script>
       const original = document.title;
-      console.log(original);
       document.querySelector("#resume-title").addEventListener("change", (e) => {
         const title = e.target.value;
         if (title !== "") {
