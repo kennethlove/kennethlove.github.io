@@ -12,6 +12,7 @@ summary = "Resume"
   <dl>
     <dt>Location</dt>
     <dd><b>Portland, Oregon, United States</b></dd>
+    <!-- slot:contact-details -->
     <dt>Email</dt>
     <dd><a href="mailto:resume-spam@thekennethlove.com?subject=EMAIL ADDRESS NEEDS EDITING&body=Please remove -spam from the email address." rel="author me">resume<span style="display:none">-spam</span>@thekennethlove.com</a></dd>
     <dt class="only-print">Resume</dt>
