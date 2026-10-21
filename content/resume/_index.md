@@ -12,8 +12,7 @@ summary = "Resume"
   <dl>
     <dt>Location</dt>
     <dd><b>Portland, Oregon, United States</b></dd>
-    <dt>Email</dt>
-    <dd><a href="mailto:resume-spam@thekennethlove.com?subject=EMAIL ADDRESS NEEDS EDITING&body=Please remove -spam from the email address." rel="author me">resume<span style="display:none">-spam</span>@thekennethlove.com</a></dd>
+    <!-- slot:contact-details -->
     <dt class="only-print">Resume</dt>
     <dd class="only-print">https://thekennethlove.com/resume</dd>
     <dt>GitHub</dt>
@@ -227,6 +226,7 @@ individual contributor roles.
 - **Cascadia PHP** (<time datetime="2024">2024</time>) - "Growing Your Engineering Garden"
 - **PyCascades** (<time datetime="2018">2018</time>) - "Those Who Care, Teach!"
 - **PyOhio** (<time datetime="2018">2018</time>) - "Those Who Care, Teach!"
+- **PyGotham** (<time datetime="2017">2017</time>) - "Those Who Care, Teach!"
 - **PyCon US** (<time datetime="2013">2013</time>, <time datetime="2014">2014</time>) - Django tutorials
 - **DjangoCon US** (<time datetime="2012">2012</time>) - "Views Can Be Classy"
 - Other conferences and events
