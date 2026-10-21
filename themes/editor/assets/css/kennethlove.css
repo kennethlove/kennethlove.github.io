@@ -33,7 +33,6 @@ body {
 
 body {
   display: flex;
-  justify-content: center;
 }
 
 /* ==========================================================================
@@ -215,9 +214,13 @@ abbr {
 
 dl {
   display: grid;
-  grid-template-columns: min-content max-content;
+  grid-template-columns: min-content minmax(0, 1fr);
   line-height: 1.75;
   margin-top: 0;
+}
+
+dd {
+  overflow-wrap: anywhere;
 }
 
 time {
@@ -231,7 +234,10 @@ time {
 .container {
   display: grid;
   gap: 1rem;
+  margin-inline: auto;
   max-width: 80ch;
+  padding-inline: 2ch;
+  width: 100%;
 }
 
 .main {
@@ -239,14 +245,15 @@ time {
 }
 
 /* Single column on screen at every width, and in any media type at >= 960px. */
-@media screen, (width >= 960px) {
+@media screen,
+(width >=960px) {
   .container {
     grid-template-columns: 1fr;
     grid-template-rows: min-content auto min-content;
   }
 }
 
-@media screen and (width >= 1100px) {
+@media screen and (width >=1100px) {
   .container {
     grid-template-columns: minmax(16ch, 24ch) minmax(72ch, 80ch);
     max-width: 96ch;
@@ -257,7 +264,7 @@ time {
   }
 }
 
-@media screen and (width >= 1400px) {
+@media screen and (width >=1400px) {
   .container {
     max-width: 110ch;
   }
@@ -318,19 +325,22 @@ time {
   text-decoration: none;
 }
 
-@media screen and (width <= 1100px) {
+@media screen and (width <=1100px) {
   .side .post-nav {
     display: none;
   }
 
   .side .nav ul {
+    column-gap: 2ch;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
+    row-gap: 0;
   }
 }
 
-@media screen and (width >= 1100px) {
+@media screen and (width >=1100px) {
+
   .side .post-nav,
   .side .nav ul {
     display: block;
@@ -454,9 +464,9 @@ details[open] summary::marker {
   align-items: normal;
   column-gap: 2ch;
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: minmax(0, auto) auto;
 
-  @media screen and (width >= 1000px) {
+  @media screen and (width >=1000px) {
     margin-top: 1.75em;
   }
 
@@ -539,6 +549,41 @@ details[open] summary::marker {
   }
 }
 
+.time-wrap::before {
+  content: " • ";
+}
+
+@media screen and (width < 700px) {
+  #details-and-controls {
+    grid-template-columns: 1fr;
+  }
+
+  #details-and-controls #print-options {
+    display: none;
+  }
+
+  details li {
+    margin-left: 4ch;
+  }
+
+  summary {
+    line-height: 1.5;
+  }
+
+  .time-wrap {
+    display: block;
+  }
+
+  .time-wrap::before {
+    content: "";
+  }
+
+  summary .time-wrap::before {
+    padding-left: 4ch;
+  }
+
+}
+
 /* ==========================================================================
    Print Styles
    ========================================================================== */
@@ -555,6 +600,7 @@ details[open] summary::marker {
   }
 
   html:has(#print-full:checked) {
+
     /* Reveal closed <details> content */
     details > *:not(summary) {
       display: block;
