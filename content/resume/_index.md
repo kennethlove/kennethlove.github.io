@@ -21,24 +21,7 @@ summary = "Resume"
     <dd><a href="https://linkedin.com/in/kennethhate" rel="author me noreferrer noopener" target="_blank">https://linkedin.com/in/kennethhate</a></dd>
   </dl>
 
-  <form id="print-options">
-    <fieldset>
-      <legend>Print Options</legend>
-      <label title="Minimal items">
-        <input type="radio" id="print-minimal" name="print-options" value="minimal">
-        <span>Minimal</span>
-      </label>
-      <label title="Opened items">
-        <input type="radio" id="print-as-is" name="print-options" value="as-is" checked>
-        <span>As-is</span>
-      </label>
-      <label title="All items">
-        <input type="radio" id="print-full" name="print-options" value="full">
-        <span>Full</span>
-      </label>
-    </fieldset>
-    <label><input name="resume-title" id="resume-title" placeholder="Resume" type="text"></label>
-  </form>
+  <!-- slot:print-options -->
 </section>
 
 <section id="summary">
