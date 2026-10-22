@@ -469,83 +469,87 @@ details[open] summary::marker {
   @media screen and (width >=1000px) {
     margin-top: 1.75em;
   }
+}
 
-  #print-options {
-    justify-self: self-end;
-    margin-top: 0;
-    display: grid;
-    gap: 1lh;
+#print-options {
+  justify-self: self-end;
+  margin-top: 0;
+  display: grid;
+  gap: 1lh;
 
-    legend {
-      color: var(--ff-pink);
-    }
+  legend {
+    color: var(--ff-pink);
+  }
 
-    fieldset {
-      align-items: flex-start;
-      display: flex;
-      flex-direction: column;
-      text-align: left;
-    }
+  fieldset {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
 
-    label {
-      display: inline-block;
-      margin: 5px 0 0;
-      position: relative;
-    }
+  label {
+    display: inline-block;
+    margin: 5px 0 0;
+    position: relative;
+  }
 
-    label:hover {
-      color: var(--ff-yellow);
-    }
+  label:hover {
+    color: var(--ff-yellow);
+  }
 
-    input[type="radio"] {
-      opacity: 0;
-      position: absolute;
-    }
+  input[type="radio"] {
+    opacity: 0;
+    position: absolute;
+  }
 
-    span {
-      display: inline-block;
-      padding-left: 40px;
-      position: relative;
-    }
+  span {
+    display: inline-block;
+    padding-left: 40px;
+    position: relative;
+  }
 
-    span::before {
-      border-bottom: 1px dashed;
-      bottom: 0;
-      content: "";
-      left: 0;
-      position: absolute;
-      width: 30px;
-    }
+  span::before {
+    border-bottom: 1px dashed;
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    width: 30px;
+  }
 
-    input[type="radio"]:focus ~ span::before,
-    input[type="radio"]:checked ~ span::before {
-      border-bottom: 1px solid;
-    }
+  input[type="radio"]:focus ~ span::before,
+  input[type="radio"]:checked ~ span::before {
+    border-bottom: 1px solid;
+  }
 
-    input[type="radio"]:checked ~ span::after {
-      color: #fff;
-      content: "\2713";
-      font-size: 12px;
-      left: 12px;
-      position: absolute;
-      top: 1px;
-    }
+  input[type="radio"]:checked ~ span::after {
+    color: #fff;
+    content: "\2713";
+    font-size: 12px;
+    left: 12px;
+    position: absolute;
+    top: 1px;
+  }
 
-    input[type="text"] {
-      background: none;
-      border: 1px solid var(--ff-white);
-      color: var(--ff-white);
-      padding: 0.5lh 1ch;
-    }
+  input[type="text"],
+  textarea {
+    background: none;
+    border: 1px solid var(--ff-white);
+    color: var(--ff-white);
+    padding: 0.5lh 1ch;
+  }
 
-    input[type="text"]:placeholder-shown {
-      border: 1px dashed var(--ff-white);
-    }
+  input[type="text"]:placeholder-shown,
+  textarea:placeholder-shown {
+    border: 1px dashed var(--ff-white);
+  }
 
-    input[type="text"]:focus,
-    input[type="text"]:hover {
-      border-color: var(--ff-yellow);
-    }
+  input[type="text"]:focus,
+  input[type="text"]:hover,
+  textarea:focus,
+  textarea:hover {
+    border-color: var(--ff-yellow);
   }
 }
 
@@ -558,7 +562,7 @@ details[open] summary::marker {
     grid-template-columns: 1fr;
   }
 
-  #details-and-controls #print-options {
+  #print-options {
     display: none;
   }
 
@@ -581,7 +585,6 @@ details[open] summary::marker {
   summary .time-wrap::before {
     padding-left: 4ch;
   }
-
 }
 
 /* ==========================================================================
@@ -589,7 +592,7 @@ details[open] summary::marker {
    ========================================================================== */
 
 @media print {
-  #details-and-controls #print-options {
+  #print-options {
     display: none;
   }
 

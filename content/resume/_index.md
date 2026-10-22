@@ -13,8 +13,6 @@ summary = "Resume"
     <dt>Location</dt>
     <dd><b>Portland, Oregon, United States</b></dd>
     <!-- slot:contact-details -->
-    <dt>Email</dt>
-    <dd><a href="mailto:resume-spam@thekennethlove.com?subject=EMAIL ADDRESS NEEDS EDITING&body=Please remove -spam from the email address." rel="author me">resume<span style="display:none">-spam</span>@thekennethlove.com</a></dd>
     <dt class="only-print">Resume</dt>
     <dd class="only-print">https://thekennethlove.com/resume</dd>
     <dt>GitHub</dt>
@@ -23,24 +21,7 @@ summary = "Resume"
     <dd><a href="https://linkedin.com/in/kennethhate" rel="author me noreferrer noopener" target="_blank">https://linkedin.com/in/kennethhate</a></dd>
   </dl>
 
-  <form id="print-options">
-    <fieldset>
-      <legend>Print Options</legend>
-      <label title="Minimal items">
-        <input type="radio" id="print-minimal" name="print-options" value="minimal">
-        <span>Minimal</span>
-      </label>
-      <label title="Opened items">
-        <input type="radio" id="print-as-is" name="print-options" value="as-is" checked>
-        <span>As-is</span>
-      </label>
-      <label title="All items">
-        <input type="radio" id="print-full" name="print-options" value="full">
-        <span>Full</span>
-      </label>
-    </fieldset>
-    <label><input name="resume-title" id="resume-title" placeholder="Resume" type="text"></label>
-  </form>
+  <!-- slot:print-options -->
 </section>
 
 <section id="summary">

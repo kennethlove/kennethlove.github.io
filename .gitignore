@@ -10,3 +10,11 @@ resources/
 
 # Local Netlify folder
 .netlify
+
+# private fragments copied in by scripts/fetch-private.sh at build time
+netlify/edge-functions/*.html
+
+# secrets loaded by `netlify dev` for edge functions
+.env
+.env.*
+!.env.example
