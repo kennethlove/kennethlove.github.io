@@ -1,6 +1,0 @@
-[build]
-command = "./scripts/fetch-private.sh && hugo --gc --minify"
-publish = "public"
-
-[build.environment]
-HUGO_VERSION = "0.166.0"
