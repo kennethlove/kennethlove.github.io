@@ -57,10 +57,10 @@ export default async (request: Request, context: Context): Promise<Response> => 
     const url = new URL(request.url);
 
     // One-shot key exchange: mint the cookie, then take the secret off the URL.
-    if (url.searchParams.has("key")) {
-        if (!keyMatches(url.searchParams.get("key"))) {
-            return new Response("Not found", { status: 404 });
-        }
+    // WHY: a wrong key must behave exactly like no key — a 404 here would tell
+    // any prober the parameter does something. Success (cookie + 302) is the
+    // only observable difference.
+    if (url.searchParams.has("key") && keyMatches(url.searchParams.get("key"))) {
         context.cookies.set({
             name: COOKIE,
             value: KEY,
