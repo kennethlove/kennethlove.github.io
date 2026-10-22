@@ -209,6 +209,7 @@ individual contributor roles.
 - **Cascadia PHP** (<time datetime="2024">2024</time>) - "Growing Your Engineering Garden"
 - **PyCascades** (<time datetime="2018">2018</time>) - "Those Who Care, Teach!"
 - **PyOhio** (<time datetime="2018">2018</time>) - "Those Who Care, Teach!"
+- **PyGotham** (<time datetime="2017">2017</time>) - "Those Who Care, Teach!"
 - **PyCon US** (<time datetime="2013">2013</time>, <time datetime="2014">2014</time>) - Django tutorials
 - **DjangoCon US** (<time datetime="2012">2012</time>) - "Views Can Be Classy"
 - Other conferences and events
