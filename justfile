@@ -20,13 +20,13 @@ dev:
     cd "{{justfile_directory()}}"
     [ -f .env ] || { echo ".env missing — needs RESUME_KEY and COVER_REPO_TOKEN"; exit 1; }
     grep -q '^FRAGMENT_URL=' .env || printf '\nFRAGMENT_URL=http://localhost:%s/resume-contacts.html\nCOVER_LETTER_URL=http://localhost:%s/cover-letter.html\n' "$frag" "$frag" >> .env
-    [ -d ../cover-letter ] || { echo "../cover-letter missing — fragment repo not cloned"; exit 1; }
+    [ -d ../private-content ] || { echo "../private-content missing — fragment repo not cloned"; exit 1; }
     if nc -z 127.0.0.1 "$frag" 2>/dev/null; then
         echo "fragment server already on :$frag"
     else
-        (cd ../cover-letter && nohup python3 -m http.server "$frag" > /tmp/fragments.log 2>&1 </dev/null &)
+        (cd ../private-content && nohup python3 -m http.server "$frag" > /tmp/fragments.log 2>&1 </dev/null &)
         sleep 1
-        nc -z 127.0.0.1 "$frag" 2>/dev/null && echo "fragment server :$frag serving ../cover-letter"
+        nc -z 127.0.0.1 "$frag" 2>/dev/null && echo "fragment server :$frag serving ../private-content"
     fi
     echo "loop: http://localhost:$site/resume/   (grant cookie: just login)"
     if nc -z 127.0.0.1 "$site" 2>/dev/null; then
