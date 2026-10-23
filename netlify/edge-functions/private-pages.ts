@@ -8,10 +8,10 @@ import type { Config, Context } from "@netlify/edge-functions";
 // never set on Netlify); unset -> GitHub stays the source in production.
 const FRAGMENT_URL =
     Netlify.env.get("FRAGMENT_URL") ??
-    "https://api.github.com/repos/kennethlove/cover-letter/contents/resume-contacts.html?ref=trunk";
+    "https://api.github.com/repos/kennethlove/private-content/contents/resume-contacts.html?ref=trunk";
 const COVER_LETTER_URL =
     Netlify.env.get("COVER_LETTER_URL") ??
-    "https://api.github.com/repos/kennethlove/cover-letter/contents/cover-letter.html?ref=trunk";
+    "https://api.github.com/repos/kennethlove/private-content/contents/cover-letter.html?ref=trunk";
 
 const COVER_LETTER_PATH = /^\/cover-letter(\/|$)/;
 const SLOT = /<!--\s*slot:([-\w]+)\s*-->/g;
