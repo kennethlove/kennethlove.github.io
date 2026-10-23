@@ -330,7 +330,6 @@ ul {
     position: relative;
     text-overflow: ellipsis;
     white-space: nowrap;
-    width: 75%;
 }
 
 .side .post-nav ul li::before {
