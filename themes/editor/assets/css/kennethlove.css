@@ -150,7 +150,8 @@ a:visited {
 }
 
 a:hover,
-a:focus {
+a:focus,
+a:active {
     background-color: var(--ff-yellow);
     border-bottom-style: solid;
     color: var(--ff-purple);
@@ -322,12 +323,14 @@ ul {
 
 .side .post-nav ul li {
     color: var(--ff-mint);
-    line-height: 1.5;
+    display: block;
+    line-height: 1.65;
     overflow: hidden;
     padding-left: calc(2ch + 0.25rem);
     position: relative;
     text-overflow: ellipsis;
     white-space: nowrap;
+    width: 75%;
 }
 
 .side .post-nav ul li::before {
@@ -341,8 +344,8 @@ ul {
     content: "\2514\2500";
 }
 
-.side .post-nav ul li a {
-    text-decoration: none;
+.side .post-nav ul li > a {
+    border-bottom: 1px dashed;
 }
 
 @media screen and (width <=1100px) {
