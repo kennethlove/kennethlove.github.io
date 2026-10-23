@@ -81,7 +81,13 @@ export default async (request: Request, context: Context): Promise<Response> => 
 
     // Hugo publishes the frame for /cover-letter but never its body: without the
     // cookie the only answer is 404.
-    if (isCoverLetter && !authed) return new Response("Not found", { status: 404 });
+    // WHY: serve the site's own 404 page — a plain-text "Not found" body would
+    // single out this route as guarded (same tell class as the wrong-key 404
+    // fixed in #19).
+    if (isCoverLetter && !authed) {
+        const missing = await context.next(new Request(new URL("/404.html", url)));
+        return new Response(missing.body, { status: 404, headers: missing.headers });
+    }
 
     const response = await context.next();
 
