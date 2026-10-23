@@ -323,8 +323,11 @@ ul {
 .side .post-nav ul li {
     color: var(--ff-mint);
     line-height: 1.5;
+    overflow: hidden;
     padding-left: calc(2ch + 0.25rem);
     position: relative;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .side .post-nav ul li::before {
